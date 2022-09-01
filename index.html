@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Home | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<!-- <object class="pull-left biglogo">
+			<img class="pull-left biglogo" src="https://algo-cancer.github.io/images/logo.png" style="width:163px;height:153px;">
+		</object> -->
+		<div class="bigtitle logobox">
+			Lab for Bioinformatics and Computational Genomics
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="smallhead">
+      		Our lab applies basic algorithmic tools and techniques such as integer linear programming and approximation algorithms to computational problems in genome sequence analysis, especially in the context of cancer. In particular the lab develops computational methods for:
+			<br></br>
+			<ul>
+  				<li>Alignment, compression and secure/privacy preserving comparison of large bimolecular sequences</li>
+  				<li>Algorithmic approaches for large scale genomic</li>
+  				<li>Transcriptomic variant detection, e.g. (differential) structural variant (inversions, deletions, duplications, transpositions, novel insertions, etc.), gene fusion and splice variant identification</li>
+  				<li>Tumor heterogeneity and phylogeny modeling, both from bulk and single cell sequencing data</li>
+  				<li>Network-based integration and functional interpretation of genomic variants in cancer</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="head">
+			<a class="off" href="https://algo-cancer.github.io/blog/">Posts</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox">
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/ucla-summer3.html">
+					Talk about "Sketching Algorithms for Genomic Data Analysis and Querying in a Secure Enclave"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/cmu.html">
+					Talk about "Algorithmic approaches to tumor heterogeneity detection and phylogeny inference"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/ucla-summer2.html">
+					Talk about "Tumor evolution modeling through the use of single cell and bulk sequencing data"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/ucla-summer.html">
+					Talk about "Cancer Driver Prioritization"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/sfu.html">
+					Talk about "Computational Genomics"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/simon-article.html">
+					Computational Biology (Current State and History)
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/recomb.html">
+					Talk about "Efficient communication and storage vs. accurate variant calls in high throughput sequencing"
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+			
+						
+				
+				<div class="note">
+					<i class="fa fa-comment fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/blog/welcome.html">
+					Welcome
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+	<div class="col-md-4">
+		<div class="head">
+			<a class="off" href="https://algo-cancer.github.io/papers/">
+				Papers
+			</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox">		
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper127.html">
+					Mutational Analysis of Gene Fusions Predicts Novel MHC Class I-Restricted T cell Epitopes and Immune Signatures in a Subset of Prostate Cancer
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper126.html">
+					PRESAGE - PRivacy-preserving gEnetic testing via SoftwAre Guard Extension
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper125.html">
+					HIT'nDRIVE - Patient-specific multi-driver gene prioritization for precision oncology
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper124.html">
+					ReMixT - clone-specific genomic structure estimation in cancer
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper123.html">
+					Stromal Gene Expression is Predictive for Metastatic Primary Prostate Cancer
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper122.html">
+					Clonality Inference from Single Tumor Samples Using Low-Coverage Sequence Data
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper121.html">
+					SRRM4 Drives Neuroendocrine Transdifferentiation of Prostate Adenocarcinoma Under Androgen Receptor Pathway Inhibition
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper120.html">
+					Genomic Hallmarks of Localized, Non-Indolent Prostate Cancer
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper119.html">
+					PRINCESS - Privacy-protecting Rare disease International Network Collaboration via Encryption through Software Guard extensionS
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				<div class="note">
+					<i class="fa fa-file-text fa-fw"></i>
+					<a class="off" href="https://algo-cancer.github.io/papers/paper118.html">
+					Comparison of High-Throughput Sequencing Data Compression Tools
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+	<div class="col-md-4">
+		<div class="head">
+			News
+		</div>
+		<div class="bigspacer"></div>
+		<a class="twitter-timeline" data-theme="light" data-chrome="noheader nofooter transparent noborders" data-tweet-limit="2" href="https://twitter.com/cenksahinalp">Tweets by Cenk Sahinalp</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<!-- <div class="feedbox">
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="https://grandchallenges.iu.edu/precision-health/index.html">
+					IU Grand Challenge Program on Precision Health announced
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="https://www.sfu.ca/sfunews/stories/2017/03/sfu-computing-science-alumnus-named-2017-sloan-research-fellow.html">
+					Fereydoun Hormozdiari named 2017 Sloan Research Fellow
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="">
+					Faraz Hach is now a senior scientist at Vancouver Prostate Centre
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="">
+					Iman Hajirasouliha is now a faculty at Cornell University, Weill-Cornell School of Medicine
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="https://www.nature.com/articles/nmeth.4037">
+					As a part of the genome compression standardization effort, Sahinalp Lab and collaborators publish a comprehensive benchmarking suite for genomic sequence compression
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="http://news.mit.edu/2016/protecting-privacy-genomic-databases-0809">
+					Protecting privacy in genomic databases
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+				
+				<div class="note">
+					<i class="fa fa-rss fa-fw"></i>
+					<a class="off" href="https://www.nature.com/articles/nrurol.2016.102">
+					Nature Review Urology, SRRM4 drives NEPC progression
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+			
+		</div> -->
+		<div class="bigspacer"></div>		
+	</div>
+
+<div class="spacer"></div>
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

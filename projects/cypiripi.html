@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Cypiripi | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">Cypiripi</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/cypiripi">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="cypiripi-has-been-discontinued-and-deprecated-in-favor-of-aldy">Cypiripi has been discontinued and deprecated in favor of <a href="https://github.com/inumanag/aldy">Aldy</a>.</h1>
+
+<p>Aldy is much more capable than Cypiripi and covers all aspect of the original algorithm.
+This repository is purely for archival purposes. No support requests will be handled anymore.</p>
+
+<hr />
+
+<p>I am finally releasing source code for this project— mainly for
+archival purposes. It’s licensed under
+<a href="http://matt.might.net/articles/crapl/">CRAPL license</a>, which best
+describes its development process and the resulting source code quality (please
+don’t ask me how to compile it or how to use those scripts in <code class="language-plaintext highlighter-rouge">util</code> folder).</p>
+
+<p>As for the original simulations used in the paper, I lost original FASTQ and SAM files
+(they probably disappeared when somebody asked me to clean up my
+multi-TB home directory on the shared cluster, and only later I realized that 
+the purge was too successful). Sorry for that…</p>
+
+<p>Anyways, if you really need this, good luck (really)! I highly recommend anybody who needs to get the job done to use
+<a href="http://aldy.csail.mit.edu">Aldy</a>, which basically started as an attempt to “fix” 
+Cypiripi (hopeless attempt, as it turned out), and which can 
+do anything Cypiripi currently does in a way more reproducible and stable manner.</p>
+
+<hr />
+
+<h1 id="cypiripi">Cypiripi</h1>
+
+<p>Cypiripi is a computational tool for <em>CYP2D6</em> genotyping.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Software manual is located at http://sfu-compbio.github.io/cypiripi/.</p>
+
+<p>Algorithm details are published at ISMB 2015. Publication can be accessed at http://www.ncbi.nlm.nih.gov/pubmed/26072492.</p>
+
+<h2 id="faq">F.A.Q.</h2>
+
+<h3 id="what-kind-of-data-does-cypiripi-currently-support">What kind of data does Cypiripi currently support?</h3>
+
+<p>Cypiripi is designed to work with Solexa/Illumina whole-genome sequencing technologies (e.g. Genome Analyzer, HiSeq and similar sequencers).</p>
+
+<p>We have tested Cypiripi on HiSeq simulations and real data (CEPH trio).
+Cypiripi can work with other technologies as long as the following conditions are met:</p>
+
+<ol>
+  <li>
+    <p><strong>Coverage is uniform</strong></p>
+
+    <p>This is the most important requirement. Uneven coverage will break copy-number detection, and predictions will suffer.</p>
+  </li>
+  <li>
+    <p><strong>Coverage is greater or equal than 40x</strong></p>
+
+    <p>You can get some results on lower coverage, but Cypiripi is not designed to handle such cases.</p>
+  </li>
+  <li>
+    <p><strong>Read lengths are greater or equal than 75bp</strong></p>
+  </li>
+  <li>
+    <p><strong>Read lengths are consistent</strong></p>
+
+    <p>Read lengths should be of the same length within the sample.</p>
+
+    <p>If they are not, you can add <code class="language-plaintext highlighter-rouge">--crop X</code> parameter to the mrsfast and mrfast, where X is the length of smallest read in the sample.</p>
+
+    <p><strong>Be warned</strong>: cropping will resize all long reads! This means that if you have thousand 100bp reads and one 30bp read, all reads will be considered as 30bp reads. This should be fine if you have reads of size 100 and 101bp, but if you have large variations between read lengths, cropping will not produce expected results.</p>
+  </li>
+</ol>
+
+<p><strong>Warning</strong>: Use original FASTQ files of the sequencing experiment if possible. Do not use FASTQ files created from post-processed SAM/BAM files. These FASTQ files usually omit some reads due to the mapping misses and might even contain hard-clipped reads.</p>
+
+<h3 id="how-to-run-cypiripi-on-large-samples">How to run Cypiripi on large samples</h3>
+
+<p>Current versions of mrfast (2.6.1.0 as the time of writing) will load the whole FASTQ file into the memory. This is impractical for large FASTQ files, unless you have 1 TB of RAM.</p>
+
+<p>If you happen to have a large FASTQ file, it is recommended to split it into several smaller files and invoke the mapping manually. Here is a quick step-by-step guide on how to do that.</p>
+
+<ol>
+  <li>
+    <p><em>Split the FASTQ files</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> split -d -l 20000000 input.fq split/input.fq
+</code></pre></div>    </div>
+
+    <p>This will generate files small FASTQ files in the directory <code class="language-plaintext highlighter-rouge">split</code>. Each small file will have 5,000,000 records (totaling 20,000,000 lines).</p>
+  </li>
+  <li>
+    <p><em>Run mrfast and mrsfast for every small file</em></p>
+
+    <p>Before starting, make sure that you have indexed the reference. If you do not have reference indexes, generate them by running:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> mrsfast --index  reference.cyp2d6.fa
+ mrfast  --index  reference.cyp2d7.fa
+</code></pre></div>    </div>
+
+    <p>First, generate single-end mapping (assuming that you have reference files provided with Cypiripi in the same directory):</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> for i in split/input.fq*; do
+     mrsfast --search reference.cyp2d6.fa -e 2 --seqcomp --seq ${i} -o ${i}.cyp2D6.sam --disable-sam-header --disable-nohits --threads 4 ;
+     mrfast  --search reference.cyp2d7.fa -e 5 --seqcomp --seq ${i} -o ${i}.cyp2D7.sam -u ${i}.cyp2D6.sam.unmap ;
+ done
+</code></pre></div>    </div>
+
+    <p>Afterwards, generate paired-end mapping:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> for i in split/input_1.fq.*; do
+     mrsfast --search reference.cyp2d6.fa -e 2 --seqcomp --pe --seq ${i} -o ${i}.cyp2D6.sam.paired --disable-sam-header --disable-nohits --min 250 --max 650 --threads 4 ;
+     mrfast  --search reference.cyp2d7.fa -e 5 --seqcomp --pe --seq ${i} -o ${i}.cyp2D7.sam.paired -u {1}.cyp2D6.sam.unmap --min 250 --max 650 ;
+ done
+</code></pre></div>    </div>
+
+    <p>In this example, it is assumed that the distance between the pairs is in the range from 250 to 650. If your sequencing experiment has different insert sizes, feel free to adjust the <code class="language-plaintext highlighter-rouge">--min</code> and <code class="language-plaintext highlighter-rouge">--max</code> parameters as necessary.</p>
+
+    <p>These commands can be ran in parallel (e.g. on cluster or via GNU Parallel).</p>
+  </li>
+  <li>
+    <p><em>Concatenate the output</em></p>
+
+    <p>In this step, just concatenate the small <code class="language-plaintext highlighter-rouge">.sam</code> files into a large one by invoking:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    cat split/input.fq*.cyp2D6.sam split/input.fq*.cyp2D7.sam &gt; input.sam
+    cat split/input.fq*.cyp2D6.sam.paired split/input.fq*.cyp2D7.sam.paired &gt; input.sam.paired
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><em>Run the Cypiripi</em></p>
+
+    <p>Assuming that you have <code class="language-plaintext highlighter-rouge">input.sam</code> and <code class="language-plaintext highlighter-rouge">input.sam.paired</code> ready, you can now invoke Cypiripi by running:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python ./cypiripi.py --fasta reference --sam input.sam --cov X
+</code></pre></div>    </div>
+
+    <p>where <code class="language-plaintext highlighter-rouge">X</code> is the coverage of the data.</p>
+  </li>
+</ol>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

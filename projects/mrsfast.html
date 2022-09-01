@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>mrsFAST | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">mrsFAST</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/mrsfast">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="mrsfast">mrsFAST</h1>
+
+<p>##0. Installation</p>
+
+<p>To install mrsFAST-Ultra, first you should fetch it from our git repository, or download one of the corresponding compressed zip/tar.gz packages. After downloading, change the current directory to the source directory <code class="language-plaintext highlighter-rouge">mrsfast</code>, and run <code class="language-plaintext highlighter-rouge">make</code> in the terminal. The <code class="language-plaintext highlighter-rouge">mrsfast</code> and <code class="language-plaintext highlighter-rouge">snp_indexer</code> binaries will be created, which are ready to use.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/mrsfast
+<span class="nb">cd </span>mrsfast
+make
+</code></pre></div></div>
+
+<p>If you are interested in a particular version, after downloading the git repo, checkout the that version and do <code class="language-plaintext highlighter-rouge">make</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/mrsfast
+<span class="nb">cd </span>mrsfast
+git checkout v3.3.0
+make
+</code></pre></div></div>
+
+<p>Alternatively, you can go to <a href="https://github.com/sfu-compbio/mrsfast/releases">releases page</a> and click on the desired version and then click on download the zip or tar file, switch to directory and run <code class="language-plaintext highlighter-rouge">make</code>.</p>
+
+<p>To grab sample data and test <code class="language-plaintext highlighter-rouge">mrsfast</code>, please download it from our git repository or the compressed package.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/mrsfast mrsfast/sample-data <span class="nt">-b</span> sample-data
+</code></pre></div></div>
+<p>Note that the current version of mrsFAST-Ultra requires 64 bit architecture and does not support 32 bit machines.</p>
+
+<hr />
+
+<p>##1. Indexing Reference Genome</p>
+
+<p>In order to map read sequences to a reference genome, mrsFAST-Ultra first needs to creata an index from the genome fasta file. This command will create the file <code class="language-plaintext highlighter-rouge">genome.fa.index</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./mrsfast <span class="nt">--index</span> genome.fa
+</code></pre></div></div>
+
+<p>By default, the indexing window size (length of hash values stored in the index hash table) is 12. This value could be also determined with the <code class="language-plaintext highlighter-rouge">--ws</code> option. A maximum value of 14 would be logical for window size. Larger values could lead to excessive memory usage in the mapping stage.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./mrsfast <span class="nt">--index</span> genome.fa <span class="nt">--ws</span> 14
+</code></pre></div></div>
+
+<hr />
+
+<p>##2. Mapping Options</p>
+
+<p>To perform read mapping, mrsFAST-Ultra should be executed with the <code class="language-plaintext highlighter-rouge">--search</code> option. By default, mrsFAST-Ultra is a all-mapper tool. This means that it finds and reports all the mappings for each input read. If no option is provided, mrsFAST-Ultra performs single-end mapping. This is an example of running mrsFAST-Ultra for mapping read sequences in the sample <code class="language-plaintext highlighter-rouge">reads.fq</code> file.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./mrsfast <span class="nt">--search</span> genome.fa <span class="nt">--seq</span> reads.fq
+</code></pre></div></div>
+
+<p>By default, mrsFAST-Ultra sets the maximum error threshold to 6% so that %94 similarity between reads and genome is guaranteed. The error threshold could also be set using the <code class="language-plaintext highlighter-rouge">-e</code> option. Setting this value to zero means that only exact matches are desired.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4
+</code></pre></div></div>
+
+<p>To trim input reads to a shorter length, <code class="language-plaintext highlighter-rouge">--crop</code> option can be used. For example if the input reads are of length 100 and <code class="language-plaintext highlighter-rouge">--crop 40</code> is used, only the first 40 base pairs of each read would be read and used for mapping.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --crop 40
+</code></pre></div></div>
+
+<p>Alternatively, you may crop from tail of the reads by using <code class="language-plaintext highlighter-rouge">--tail-crop</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --tail-crop 40
+</code></pre></div></div>
+
+<p>mrsFAST-Ultra is able to perform mapping on multiple CPU cores in a parallel manner. The number of threads is determined using the <code class="language-plaintext highlighter-rouge">--threads</code> option. The default value is 1 which runs mrsFAST-Ultra on a single thread. If <code class="language-plaintext highlighter-rouge">--threads</code> is set to 0, mrsFAST-Ultra will use all the available cores in the system.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --threads 4
+</code></pre></div></div>
+
+<p>When huge volumes of input reads are required to be mapped on a machine with limited memory resources, mrsFAST-Ultra is capable of adjusting itself with the specified memory limits. The total memory (in GB) available for running mrsFAST-Ultra should be specified with the <code class="language-plaintext highlighter-rouge">--mem</code> option. In this mode, mrsFAST-Ultra might perform mapping in several iterations and each time it only loads as many reads as allowed by the memory limit.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --mem 8
+</code></pre></div></div>
+
+<p>In the limited mapping mode, mrsFAST-Ultra reports only up to a specified number of mappings for each read. The <code class="language-plaintext highlighter-rouge">-n</code> option sets the maximum number of mappings per read. Reads with mapping more than this value will not be printed in the output. This option is valid in both single-end and paired-end modes, but could not be used together with best mapping (<code class="language-plaintext highlighter-rouge">--best</code>) and paired-end discordant mode (<code class="language-plaintext highlighter-rouge">--discordant-vh</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 -n 100
+</code></pre></div></div>
+
+<p>In best mapping mode, for each read mrsFAST-Ultra reports a single best location which has the smallest hamming distance among all of its possible mappings. In case of a tie, one of the mapping locations with the smallest hamming distance is reported at random. This option cannot be used in paired-end discordant mode (<code class="language-plaintext highlighter-rouge">--discordant-vh</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --best
+</code></pre></div></div>
+
+<p>Except the cases that are pointed out, obviously any combination of the above options can be used together in any of the single-end and paired-end modes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq --crop 60 -e 2 --mem 6 --threads 4 -n 100 -o mappings.sam --disable-nohits
+</code></pre></div></div>
+
+<hr />
+
+<p>##3. Paired-end Mapping</p>
+
+<p>As mentioned above, by default mrsFAST-Ultra will run in single-end mode. The paired-end mapping options is invoked using the <code class="language-plaintext highlighter-rouge">--pe</code> option. If the reads are in two different files, <code class="language-plaintext highlighter-rouge">--seq1</code> and <code class="language-plaintext highlighter-rouge">--seq2</code> should be used to indicate the input files. If the reads are interleaved in a single file, <code class="language-plaintext highlighter-rouge">--seq</code> is used to indicated the file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq interleaved-reads.fq --pe -e 4
+$ ./mrsfast --search genome.fa --seq1 mates1.fq --seq2 mates2.fq --pe -e 4
+</code></pre></div></div>
+
+<p>If the distance range between condordant pairs is not specified as above, mrsFAST-Ultra automatically decides about this range according to the mean and standard deviation of distances observed among the mates. The distance allowed between the paired-end reads should be specified with <code class="language-plaintext highlighter-rouge">--min</code> and <code class="language-plaintext highlighter-rouge">--max</code>. These values specify the minimum and maximum of the template length (the distance between outer edges of the mapping mates).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq1 mates1.fq --seq2 mates2.fq --pe -e 4 --min 100 --max 500
+</code></pre></div></div>
+
+<p>Again, any combination of the introduced mapping options could be used in the paired-end mode.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq1 mates1.fq --seq2 mates2.fq --pe -e 4 --min 100 --max 500 --threads 4 --best -o mappings.sam
+</code></pre></div></div>
+<p>mrsFAST-Ultra can report discordant paired-end mappings for structural variation detection using <a href="http://variationhunter.sf.net">Variation Hunter</a>. In this mode the <code class="language-plaintext highlighter-rouge">--min</code> and <code class="language-plaintext highlighter-rouge">--max</code> options will define the minimum and maximum inferred size for concordant mappings.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq1 mates1.fq --seq2 mates2.fq --discordant-vh -e 4 --min 100 --max 500
+</code></pre></div></div>
+
+<p>In paired-end discordant mode, an upper bound can be defined for maximum number of discordant mappings per read. This values is determined by <code class="language-plaintext highlighter-rouge">--max-discordant-cutoff</code> option. This option is only applicable in paired-end discordant mode.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq1 mates1.fq --seq2 mates2.fq --discordant-vh -e 4 \ 
+  --min 100 --max 500 --max-discordant-cutoff 300
+</code></pre></div></div>
+
+<hr />
+
+<p>##4. SNP-aware mode
+mrsFAST-Ultra is able to do sequence mapping in SNP-aware mode. In this mode mrsFAST-Ultra tolerates the mismatches in known SNP locations provided by dbSNP database (see sample file <code class="language-plaintext highlighter-rouge">dbSNP.vcf</code>). To run in this mode, first, the snp_indexer binary should be used to create an index from the input dbSNP (vcf) file. The following command reads the sample <code class="language-plaintext highlighter-rouge">dbSNP.vcf</code> file and creates <code class="language-plaintext highlighter-rouge">snp.index</code> which is only readable by mrsFAST-Ultra. The current vcf format that is accepted by mrsFAST-Ultra is vcf version 4.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./snp_indexer dbSNP.vcf snp.index
+</code></pre></div></div>
+
+<p>In the next step, using <code class="language-plaintext highlighter-rouge">--snp</code> option mrsFAST-Ultra accepts the snp.index file as an input, and therefore ignores all mismatches occurring in the known SNP locations. The following command line executes mrsFAST-Ultra in SNP-aware mode using the index file created in last step.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --snp snp.index
+</code></pre></div></div>
+
+<p>To be able to distinguish mismatches occurring as a result of sequencing errors, and those caused by SNPs, mrsFAST-Ultra considers a quality threshold such that a mismatch at a reported SNP location will be ignored only if the corresponding read location has a quality higher than or equal to that quality threshold; otherwise the mismatch would affect the mapping as it is more probably caused by sequencing errors. The value of this threshold is set by the <code class="language-plaintext highlighter-rouge">--snp-qual</code> option. The default value is 53.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -e 4 --snp snp.index --snp-qual 60
+</code></pre></div></div>
+
+<p>The SNP-aware mode could be run together with any other combination of options both in single-end and paired-end modes (except <code class="language-plaintext highlighter-rouge">--discordant-vh</code>).</p>
+
+<hr />
+
+<p>##5. Input and Output Options</p>
+
+<p>By default, mrsfast-Ultra outputs the mapping results in <code class="language-plaintext highlighter-rouge">output</code> which is written in standard SAM format. Also in single-end mode, the set of unmapped reads are printed in <code class="language-plaintext highlighter-rouge">output.nohit</code> file. The name of sam and nohit files can be set by the <code class="language-plaintext highlighter-rouge">-o</code> option.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -o mappings.sam
+</code></pre></div></div>
+
+<p>The name of the nohit file can be determined by the <code class="language-plaintext highlighter-rouge">-u</code> option.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -o mappings.sam -u unmapped
+</code></pre></div></div>
+
+<p>If the nohit file is not desired as output, it could be omitted by adding <code class="language-plaintext highlighter-rouge">--disable-nohits</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -o mappings.sam --disable-nohits
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">--outcomp</code> option can be used to compress the mrsFAST-Ultra output file in gzip format.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -o mappings.sam --outcomp
+</code></pre></div></div>
+
+<p>mrsFAST-Ultra can process the input (FASTA/FASTQ) read files in compressed .gz format, using the <code class="language-plaintext highlighter-rouge">--seqcomp</code> option.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seqcomp --seq reads.fq.gz -o mappings.sam
+</code></pre></div></div>
+
+<p>By default, mrsFAST-Ultra includes a SAM header in the output file. To make sure the SAM header does not appear in the output, <code class="language-plaintext highlighter-rouge">--disable-sam-header</code> can be used.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast --search genome.fa --seq reads.fq -o mappings.sam --disable-sam-header
+</code></pre></div></div>
+
+<hr />
+<p>##6. mrsFAST-Ultra man page</p>
+
+<p>To view the full list of mrsFAST-Ultra options and their descriptions, please run the following.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./mrsfast -h
+</code></pre></div></div>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

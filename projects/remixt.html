@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ReMixT | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">ReMixT</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://bitbucket.org/dranew/remixt">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="remixt"><strong>ReMixT</strong></h1>
+
+<p>ReMixT is a tool for joint inference of clone specific segment and breakpoint copy number in whole genome sequencing data.  The input for the tool is a set of segments, a set of breakpoints predicted from the sequencing data, and normal and tumour bam files.  Where multiple tumour samples are available, they can be analyzed jointly for additional benefit.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="installing-from-conda">Installing from conda</h3>
+
+<p>The recommended method of installation for ReMixT is using <code class="language-plaintext highlighter-rouge">conda</code>.  First install <a href="https://store.continuum.io/cshop/anaconda/">anaconda python</a> from the continuum website.  Then add my channel, and the bioconda channel, and install ReMixT as follows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config --add channels https://conda.anaconda.org/dranew
+conda config --add channels 'bioconda'
+conda install remixt
+</code></pre></div></div>
+
+<h3 id="installing-from-source">Installing from source</h3>
+
+<h4 id="clone-source-code">Clone Source Code</h4>
+
+<p>To install the code, first clone from bitbucket.  A recursive clone is preferred to pull in all submodules.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive git@bitbucket.org:dranew/remixt.git
+</code></pre></div></div>
+
+<h4 id="dependencies">Dependencies</h4>
+
+<p>To install from source you will need several dependencies.  A list of dependencies can be found in the <code class="language-plaintext highlighter-rouge">conda</code> <code class="language-plaintext highlighter-rouge">yaml</code> file in the repo at <code class="language-plaintext highlighter-rouge">conda/remixt/meta.yaml</code>.</p>
+
+<h4 id="build-executables-and-install">Build executables and install</h4>
+
+<p>To build executables and install the ReMixT code as a python package run the following command in the ReMixT repo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python setup.py install
+</code></pre></div></div>
+
+<h2 id="setup-remixt">Setup ReMixT</h2>
+
+<h3 id="reference-genome">Reference genome</h3>
+
+<p>Download and setup of the reference genome is automated.  The default is hg19.  Select a directory on your system that will contain the reference data, herein referred to as <code class="language-plaintext highlighter-rouge">$ref_data_dir</code>.  The <code class="language-plaintext highlighter-rouge">$ref_data_dir</code> directory will be used in many of the subsequent scripts when running destruct.</p>
+
+<p>Download the reference data and build the required indexes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt create_ref_data $ref_data_dir
+</code></pre></div></div>
+
+<h3 id="mappability-file">Mappability file</h3>
+
+<p>Additionally, ReMixT requires a mappability file to be generated.  We have provided a workflow for generating a mappability file based on <code class="language-plaintext highlighter-rouge">bwa</code> alignments, for other aligners, you may want to create your own mappability workflow, see <code class="language-plaintext highlighter-rouge">remixt/mappability/bwa/workflow.py</code> as an example.</p>
+
+<p>To create a mappability file for <code class="language-plaintext highlighter-rouge">bwa</code>, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt mappability_bwa $ref_data_dir
+</code></pre></div></div>
+
+<p>Note that this workflow will take a considerable amount of time and it is recommended you run this part of ReMixT setup on a cluster or multicore machine.</p>
+
+<p>For parallelism options see the section <a href="#markdown-header-parallelism-using-pypeliner">Parallelism using pypeliner</a>.</p>
+
+<h2 id="running-remixt">Running ReMixT</h2>
+
+<h3 id="input-data">Input Data</h3>
+
+<p>ReMixT takes multiple bam files as input.  Bam files should be multiple samples from the same patient, with one bam sequenced from a normal sample from that patient.</p>
+
+<p>Additionally, ReMixT takes a list of predicted breakpoints detected by paired end sequencing as an additional input.</p>
+
+<h4 id="breakpoint-prediction-input-format">Breakpoint Prediction Input Format</h4>
+
+<p>The predicted breakpoints should be provided in a tab separated file with the following columns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prediction_id</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chromosome_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">strand_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">position_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chromosome_2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">strand_2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">position_2</code></li>
+</ul>
+
+<p>The first line should be the column names, which should be identical to the above list.  Each subsequent line is a breakpoint prediction.  The <code class="language-plaintext highlighter-rouge">prediction_id</code> should be unique to each breakpoint prediction.  The <code class="language-plaintext highlighter-rouge">chromosome_</code>, <code class="language-plaintext highlighter-rouge">strand_</code> and <code class="language-plaintext highlighter-rouge">position_</code> columns give the position and orientation of each end of the breakpoint.  The values for <code class="language-plaintext highlighter-rouge">strand_</code> should be either <code class="language-plaintext highlighter-rouge">+</code> or <code class="language-plaintext highlighter-rouge">-</code>.  A value of <code class="language-plaintext highlighter-rouge">+</code> means that sequence to the right of <code class="language-plaintext highlighter-rouge">chromosome_</code>, <code class="language-plaintext highlighter-rouge">position_</code> is preserved in the tumour chromosome containing the breakpoint.  Conversely, a value of <code class="language-plaintext highlighter-rouge">-</code> means that sequence to the left of <code class="language-plaintext highlighter-rouge">chromosome_</code>, <code class="language-plaintext highlighter-rouge">position_</code> is preserved in the tumour chromosome containing the breakpoint.</p>
+
+<p>The following table may assist in understanding the strand of a break-end.  Note that an inversion event produces two breakpoints, the strand configurations for both are shown.  Additionally, for inter-chromosomal events, any strand configuration is possible.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Structural Variation</th>
+      <th>Strand of Leftmost Break-End</th>
+      <th>Strand of Rightmost Break-End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deletion</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Duplication</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Inversion (Breakpoint A)</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Inversion (Breakpoint B)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="remixt-command-line">ReMixT Command Line</h3>
+
+<p>Running ReMixT involves invoking a single command, <code class="language-plaintext highlighter-rouge">remixt run</code>.  The result of ReMixT is an <a href="https://www.hdfgroup.org">hdf5</a> file storing <a href="http://pandas.pydata.org">pandas</a> tables.</p>
+
+<p>Suppose we have the following list of inputs:</p>
+
+<ul>
+  <li>Normal sample with ID <code class="language-plaintext highlighter-rouge">123N</code> and bam filename <code class="language-plaintext highlighter-rouge">$normal_bam</code></li>
+  <li>Tumour sample with ID <code class="language-plaintext highlighter-rouge">123A</code> and bam filename <code class="language-plaintext highlighter-rouge">$tumour_a_bam</code></li>
+  <li>Tumour sample with ID <code class="language-plaintext highlighter-rouge">123B</code> and bam filename <code class="language-plaintext highlighter-rouge">$tumour_b_bam</code></li>
+  <li>Breakpoint table in TSV format with filename <code class="language-plaintext highlighter-rouge">$breakpoints</code></li>
+</ul>
+
+<p>Additionally, ReMixT will generate the following outputs:</p>
+
+<ul>
+  <li>Results as HDF5 file storing pandas tables with filename <code class="language-plaintext highlighter-rouge">$results_h5</code></li>
+  <li>Temporary files and logs stored in directory <code class="language-plaintext highlighter-rouge">$remixt_tmp_dir</code> (directory created if it doesnt exist)</li>
+</ul>
+
+<p>Given the above inputs and outputs run ReMixT as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt run $ref_data_dir $raw_data_dir $breakpoints \
+    --normal_sample_id 123N \
+    --normal_bam_file $normal_bam \
+    --tumour_sample_ids 123A 123B \
+    --tumour_bam_files $tumour_a_bam $tumour_b_bam \
+    --results_files $results_h5
+    --tmpdir $remixt_tmp_dir
+</code></pre></div></div>
+
+<p>Note that ReMixT creates multiple jobs and many parts of ReMixT are massively parallelizable, thus it is recommended you run ReMixT on a cluster or multicore machine.  For parallelism options see the section <a href="#markdown-header-parallelism-using-pypeliner">Parallelism using pypeliner</a>.</p>
+
+<h3 id="output-file-formats">Output File Formats</h3>
+
+<p>The main output file is an HDF5 store containing pandas dataframes.  These can be extracted in python or viewed using the ReMixT viewer.  Important tables include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">stats</code>: statistics for each restart</li>
+  <li><code class="language-plaintext highlighter-rouge">solutions/solution_{idx}/cn</code>: segment copy number table for solution <code class="language-plaintext highlighter-rouge">idx</code></li>
+  <li><code class="language-plaintext highlighter-rouge">solutions/solution_{idx}/brk_cn</code>: breakpoint copy number table for solution <code class="language-plaintext highlighter-rouge">idx</code></li>
+  <li><code class="language-plaintext highlighter-rouge">solutions/solution_{idx}/h</code>: haploid depths for solution <code class="language-plaintext highlighter-rouge">idx</code></li>
+</ul>
+
+<h4 id="statistics">Statistics</h4>
+
+<p>ReMixT uses optimal restarts and model selection by BIC.  The statistics table contains one row per restart, sorted by BIC.  The table contains the following columns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">idx</code>: the solution index, used to refer to <code class="language-plaintext highlighter-rouge">solutions/solution_{idx}/*</code> tables.</li>
+  <li><code class="language-plaintext highlighter-rouge">bic</code>: the bic of this solution</li>
+  <li><code class="language-plaintext highlighter-rouge">log_posterior</code>: log posterior of the HMM</li>
+  <li><code class="language-plaintext highlighter-rouge">log_posterior_graph</code>: log posterior of the genome graph model</li>
+  <li><code class="language-plaintext highlighter-rouge">num_clones</code>: number of clones including normal</li>
+  <li><code class="language-plaintext highlighter-rouge">num_segments</code>: number of segments</li>
+  <li><code class="language-plaintext highlighter-rouge">h_converged</code>: whether haploid depths estimation converged</li>
+  <li><code class="language-plaintext highlighter-rouge">h_em_iter</code>: number of iterations for convergence of h</li>
+  <li><code class="language-plaintext highlighter-rouge">graph_opt_iter</code>: number of iterations for convergence of genome graph copy number</li>
+  <li><code class="language-plaintext highlighter-rouge">decreased_log_posterior</code>: whether the genome graph optimization stopped due to a move that decreased the log posterior</li>
+</ul>
+
+<h4 id="segment-copy-number">Segment Copy Number</h4>
+
+<p>The segment copy number table adds additional columns to the segment counts table described above, including but not limited to:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">major_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">minor_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">major_2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">minor_2</code></li>
+</ul>
+
+<p>The columns refer to the major and minor copy number in tumour clone 1 and 2.</p>
+
+<h4 id="breakpoints-copy-number">Breakpoints Copy Number</h4>
+
+<p>The breakpoint copy number table contains the following columns:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prediction_id</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cn_1</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cn_2</code></li>
+</ul>
+
+<p>The <code class="language-plaintext highlighter-rouge">prediction_id</code> column matches the column of the same name in the input breakpoints file, and specifies for which breakpoint prediction the copy number is being provided.  The <code class="language-plaintext highlighter-rouge">cn_1</code> and <code class="language-plaintext highlighter-rouge">cn_2</code> columns provide the clone specific copy number for tumour clone 1 and 2 respectively.</p>
+
+<h4 id="haploid-depths">Haploid Depths</h4>
+
+<p>The haploid depths is a vector of <code class="language-plaintext highlighter-rouge">M</code> depths for each of the <code class="language-plaintext highlighter-rouge">M</code> clones including the normal.  To recover cell mixture proportions, simply normalize <code class="language-plaintext highlighter-rouge">h</code>.</p>
+
+<h3 id="extracting-tables-as-tsv-files">Extracting Tables as TSV files</h3>
+
+<p>If preferred, it is possible to extract copy number and metadata in TSV and YaML format.  For results file <code class="language-plaintext highlighter-rouge">$results_h5</code>, extract segment copy number, breakpoint copy number and meta data to files <code class="language-plaintext highlighter-rouge">$cn_table</code>, <code class="language-plaintext highlighter-rouge">$brk_cn_table</code>, <code class="language-plaintext highlighter-rouge">$meta_data</code> respectively as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt write_results \
+    $results_h5 $cn_table $brk_cn_table $meta_data
+</code></pre></div></div>
+
+<h3 id="remixt-viewer">ReMixT Viewer</h3>
+
+<p>There is an experimental viewer for ReMixT at <code class="language-plaintext highlighter-rouge">tools/remixt_viewer_app.py</code>.  Bokeh ‘&gt;0.10.0’ is required.  To use the viewer app, organize your patient sample results files as <code class="language-plaintext highlighter-rouge">./patient_*/sample_*.h5</code>.  From the directory containing patient subdirectories, run the bokeh server:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bokeh-server --script $REMIXT_DIR/tools/remixt_viewer_app.py
+</code></pre></div></div>
+
+<p>Then navigate to <code class="language-plaintext highlighter-rouge">http://127.0.0.1:5006/remixt</code>.</p>
+
+<h2 id="test-dataset-for-remixt">Test Dataset for ReMixT</h2>
+
+<p>A test dataset is provided for providing the ability to run a quick analysis of a small dataset to ensure remixt is working correctly.</p>
+
+<p>We will assume that the <code class="language-plaintext highlighter-rouge">REMIXT_DIR</code> environment variable points to a clone of the ReMixT source code.  Additionally, create a directory, and set the environment variable <code class="language-plaintext highlighter-rouge">WORK_DIR</code> to the location of that directory.</p>
+
+<p>First use the <code class="language-plaintext highlighter-rouge">remixt create_ref_data</code> sub-command to create a reference dataset.  Specify a config, and use the example config that restricts to chromosome 15.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt create_ref_data $WORK_DIR/ref_data \
+    --config $REMIXT_DIR/examples/chromosome_15_config.yaml
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">wget</code> to retrieve a precomputed mappability file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget ftp://ftp.bcgsc.ca/public/shahlab/ReMixT/hg19.100.bwa.mappability.h5 --directory-prefix $WORK_DIR/ref_data/
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">wget</code> to retrieve the example bam files and their indices for chromosome 15, and the breakpoints file with chromosome 15 breakpoints.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget ftp://ftp.bcgsc.ca/public/shahlab/ReMixT/HCC1395*chr15.bam* --directory-prefix $WORK_DIR/
+wget ftp://ftp.bcgsc.ca/public/shahlab/ReMixT/HCC1395_breakpoints.tsv --directory-prefix $WORK_DIR/
+</code></pre></div></div>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">remixt run</code> sub-command to run a remixt analysis.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt run $WORK_DIR/ref_data $WORK_DIR/raw_data $WORK_DIR/HCC1395_breakpoints.tsv \
+    --config $REMIXT_DIR/examples/chromosome_15_config.yaml \
+    --tmpdir $WORK_DIR/tmp_remixt \
+    --tumour_sample_ids HCC1395 \
+    --tumour_bam_files $WORK_DIR/HCC1395_chr15.bam \
+    --normal_sample_id HCC1395BL \
+    --normal_bam_file $WORK_DIR/HCC1395BL_chr15.bam \
+    --loglevel DEBUG \
+    --submit local \
+    --results_files $WORK_DIR/HCC1395.h5
+</code></pre></div></div>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">remixt write_results</code> sub-command to write out tables of results and a yaml file containing inferred parameters and other meta data.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt write_results $WORK_DIR/HCC1395.h5 \
+    $WORK_DIR/HCC1395_cn.tsv \
+    $WORK_DIR/HCC1395_brk_cn.tsv \
+    $WORK_DIR/HCC1395_info.yaml
+</code></pre></div></div>
+
+<p>Finally, create a visualization of the solutions using the <code class="language-plaintext highlighter-rouge">remixt visualize_solutions</code> sub-command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remixt visualize_solutions $WORK_DIR/HCC1395.h5 \
+    $WORK_DIR/HCC1395.html
+</code></pre></div></div>
+
+<h2 id="parallelism-using-pypeliner">Parallelism Using Pypeliner</h2>
+
+<p>ReMixT uses the pypeliner python library for parallelism.  Several of the scripts described above will complete more quickly on a multi-core machine or on a cluster.</p>
+
+<p>To run a script in multicore mode, using a maximum of 4 cpus, add the following command line option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--maxjobs 4
+</code></pre></div></div>
+
+<p>To run a script on a cluster with qsub/qstat, add the following command line option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--submit asyncqsub
+</code></pre></div></div>
+
+<p>Often a call to qsub requires specific command line parameters to request the correct queue, and importantly to request the correct amount of memory.  To allow correct calls to qsub, use the <code class="language-plaintext highlighter-rouge">--nativespec</code> command line option, and use the placeholder <code class="language-plaintext highlighter-rouge">{mem}</code> which will be replaced by the amount of memory (in gigabytes) required for each job launched with qsub.  For example, to use qsub, and request queue <code class="language-plaintext highlighter-rouge">all.q</code> and set the <code class="language-plaintext highlighter-rouge">mem_free</code> to the required memory, add the following command line options:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--submit asyncqsub --nativespec "-q all.q -l mem_free={mem}G"
+</code></pre></div></div>
+
+<h1 id="license">License</h1>
+
+<p>ReMixT is released under the <a href="http://www.opensource.org/licenses/MIT">MIT License</a>.</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

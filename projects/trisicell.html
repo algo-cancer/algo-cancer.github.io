@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Trisicell | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">Trisicell</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/faridrashidi/trisicell">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<p><a href="https://doi.org/10.1101/2021.03.26.437185"><img src="https://img.shields.io/badge/DOI-10.1101/2021.03.26.437185-orange?style=flat-square" alt="DOI" /></a>
+<a href="https://github.com/faridrashidi/trisicell"><img src="https://img.shields.io/github/stars/faridrashidi/trisicell?logo=GitHub&amp;color=yellow&amp;style=flat-square" alt="Stars" /></a>
+<a href="https://pypi.org/project/trisicell"><img src="https://img.shields.io/pypi/v/trisicell?style=flat-square&amp;color=blue" alt="PyPI" /></a>
+<a href="https://pepy.tech/project/trisicell"><img src="https://img.shields.io/badge/dynamic/json?style=flat-square&amp;color=blue&amp;label=downloads&amp;query=%24.total_downloads&amp;url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fprojects%2Ftrisicell" alt="PyPIDownloads" /></a>
+<a href="https://github.com/faridrashidi/trisicell/blob/master/CONTRIBUTING.rst"><img src="https://img.shields.io/static/v1.svg?label=Contributions&amp;message=Welcome&amp;color=0059b3&amp;style=flat-square" alt="Contributions Welcome" /></a>
+<a href="https://github.com/faridrashidi/trisicell/actions?query=workflow%3ACI"><img src="https://img.shields.io/github/workflow/status/faridrashidi/trisicell/CI/master?label=CI&amp;logo=github&amp;style=flat-square" alt="Build Status" /></a>
+<a href="https://trisicell.readthedocs.io"><img src="https://readthedocs.org/projects/trisicell/badge/?version=latest&amp;style=flat-square" alt="Docs Status" /></a>
+<a href="https://github.com/pre-commit/pre-commit"><img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&amp;logoColor=white&amp;style=flat-square" alt="Pre-commit" /></a>
+<a href="https://github.com/python/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square" alt="Code Style" /></a></p>
+
+<h1 id="trisicell---scalable-tumor-phylogeny-reconstruction-and-validation-from-single-cell-data">Trisicell - Scalable tumor phylogeny reconstruction and validation from single-cell data</h1>
+
+<p><img src="https://raw.githubusercontent.com/faridrashidi/trisicell/master/docs/source/_static/images/overview.png" alt="overview" /></p>
+
+<p>Trisicell (pronounced as “tricycle”) is a computational toolkit for
+scalable tumor phylogeny reconstruction and validation from full-length
+transcriptome profiling of single-cell data (e.g. Smart-seq2) as well as
+single cell genome or exome sequencing data. Trisicell allows
+identifying and validating robust portions of a tumor phylogeny,
+offering the ability to focus on the most important (sub)clones and the
+genomic alterations that seed the associated clonal expansion.</p>
+
+<h2 id="manuscript">Manuscript</h2>
+
+<p>Please see our <a href="https://doi.org/10.1101/2021.03.26.437185">preprint</a> on
+<strong>bioRxiv</strong> to learn more.</p>
+
+<h2 id="support">Support</h2>
+
+<p>Feel free to submit an
+<a href="https://github.com/faridrashidi/trisicell/issues/new/choose">issue</a> or
+send us an <a href="mailto:farid.rsh@gmail.com">email</a>. Your help to improve
+Trisicell is highly appreciated.</p>
+
+<p>Trisicell was developed in collaboration between the <a href="https://ccr.cancer.gov/cancer-data-science-laboratory">Cancer Data
+Science Laboratory
+(CDSL)</a> and the
+<a href="https://ccr.cancer.gov/laboratory-of-cancer-biology-and-genetics">Laboratory of Cancer Biology and Genetics
+(LCBG)</a>
+at the <a href="https://www.cancer.gov">National Cancer Institute (NCI)</a>.</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

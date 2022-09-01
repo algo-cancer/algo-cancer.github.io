@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>COMPAS | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">COMPAS</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/nlgndnmz/COMPAS">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="compas---comparative-alternative-splicing-detection">COMPAS - Comparative alternative splicing detection</h1>
+<h6 id="author-nilgun-donmez">Author: Nilgun Donmez</h6>
+
+<p>COMPAS is a bioinformatics tool that is designed to analyze pairs of RNA-Seq datasets in order to identify significant splice variants.</p>
+
+<h5 id="pre-requisites">Pre-requisites</h5>
+
+<p>To use COMPAS, you need Perl ( http://www.perl.org/ ) and R ( http://www.r-project.org/ ) installed on your machine. COMPAS has primarily been tested on 64-bit Linux environments using the following versions (though older or newer versions may also work):</p>
+
+<ul>
+  <li>Perl (5.14.2)</li>
+  <li>R (2.15.1)</li>
+</ul>
+
+<p>You also need an efficient RNA-Seq mapper (such as, but not limited to, TopHat http://tophat.cbcb.umd.edu/ ) which can report its output in .sam (or .bam) format. The choice of the mapper is left to the user, however we recommend using a software that can both use annotations and find novel junctions. High mapping sensitivity is also recommended.</p>
+
+<h5 id="installation">Installation</h5>
+
+<p>To run COMPAS, you need to install the “compas” R package on your system. The best way to do this is through install.packages() function in R:</p>
+
+<p>` install.packages(“./COMPAS-master/compas”, repos=NULL, type=”source”) `</p>
+
+<p>Note that the above command only works if you have developer tools for R (this will be the case if you have built R from source).</p>
+
+<p>In addition to this package, COMPAS needs the following scripts:</p>
+
+<ul>
+  <li>processSam.pl</li>
+  <li>mergeCounts.pl</li>
+  <li>runCOMPAS.R</li>
+</ul>
+
+<p>To call these scripts from anywhere, simply copy them to your ./bin or add the directory containing COMPAS to your path.</p>
+
+<h5 id="running-compas">Running COMPAS</h5>
+
+<p>First, you should map the reads for each dataset to the reference genome using an up-to-date gene annotation file (latest Ensembl annotations are recommended). Keep this annotation file (must be in .gtf format) around since you will need it in later steps. Note that if you have reads from multiple lanes and/or paired-end reads in separate fastq files, make sure to map them together into a single .sam file.</p>
+
+<p>For the rest of this section, I will suppose you have two high-throughput RNA-Seq datasets mapped as “tumor.sam” and “benign.sam”.</p>
+
+<h6 id="step-1">Step 1</h6>
+
+<p>Run the following commands (can be run in parallel):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat ./tumor.sam | processSam.pl -g ./gene_annotations.gtf -o tumor -r 100 -s 0
+cat ./benign.sam | processSam.pl -g ./gene_annotations.gtf -o benign -r 100 -s 0
+</code></pre></div></div>
+
+<p>Above, “gene_annotations.gtf” is a GTF formatted annotation file (ideally the same file that was used during the mapping phase). The directive “-r 100” tells the script that the read length is 100bp and “-o” option specifies the prefix for the output files. “-s 0” option tells the script that this RNA-Seq dataset is not strand-specific. This option can be omitted as long as the dataset is not strand-specific. Otherwise, it should be set to either “-s 1” (for forward strand genes) or “-s 2” (for reverse strand genes).</p>
+
+<p>The above command will work for .sam files that are coordinate sorted. If your files are not sorted by genomic coordinates, you have to toggle the “-u” option:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>` cat ./unsorted.sam</td>
+      <td>processSam.pl -g ./gene_annotations.gtf -o unsorted -r 100 -s 0 -u `</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note that processSam.pl reads its input from standard input. This is to facilitate pipelines. For example, if you keep your mapping files in compressed .bam format you can do:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>` samtools view ./tumor.bam</td>
+      <td>processSam.pl -g ./gene_annotations.gtf -o tumor -r 100 -s 0 `</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This will save significant hard disk space and time since the intermediate .sam file will never be written to disk. In fact, this is highly recommended since it will also be faster than reading the .sam file from disk.</p>
+
+<p>For the first command above, three output files will be written: “tumor.counts”, “tumor.hist” and “tumor.skipped”. Similarly, for the second command: “benign.counts”, “benign.hist” and “benign.skipped” will be written. The .skipped files are for information only, the other files will be used in the subsequent steps.</p>
+
+<h6 id="step-2">Step 2</h6>
+
+<p>To use COMPAS in (default) comparative mode, you first have to combine the outputs of processSam.pl from different samples. This is done as follows:</p>
+
+<p>mergeCounts.pl -q benign.counts -t tumor.counts &gt; benign_vs_tumor.counts \n\n”;</p>
+
+<p>Note that mergeCounts.pl writes its output to standard output, so directing this into a file (as above) is highly recommended.</p>
+
+<h6 id="step-3">Step 3</h6>
+
+<p>In this step, we run the main R script as below:</p>
+
+<p>` runCOMPAS.R 2 -b 100000000 -i ./benign_vs_tumor.counts -o ./benignVStumor -h ./tumor.hist -l 100 -n 382000000 -h2 ./benign.hist -l2 100 -n2 391000000 &gt; run.log `</p>
+
+<p>Above the first argument is required and states that we have 2 samples. The “-b” option specifies the baseline number of reads and is used to normalize the coverage depths. Fine-tuning of this parameter is not crucial, however we recommended that it is set to roughly the same magnitude as the number of reads mapped in each dataset. More importantly, if you intend to run COMPAS on many samples and integrate the downstream analysis, you should fix this parameter to a constant for all runs. “benign_vs_tumor.counts” is the file we obtained in the previous step and “benignVStumor” is a prefix for the output files to be written. The arguments “-h”, “-l” and “-n” specify the .hist file, the read length in base pairs and the total number of reads mapped for the benign dataset (given with -q option in mergeCounts.pl) respectively. “-h2”, “-l2” and “-n2” are the same arguments for the second sample (given with -t option in mergeCounts.pl). This script writes its progress to the standard output. If you wish to keep this information, direct it to a file as above.</p>
+
+<p>Note that the above command assumes you have already installed the “compas” package on your system. If the run is successful, the following four files will be written:</p>
+
+<ul>
+  <li>benignVStumor.1.gtf</li>
+  <li>benignVStumor.2.gtf</li>
+  <li>benignVStumor.stat</li>
+  <li>benignVStumor.out</li>
+</ul>
+
+<p>The first two files above are GTF formatted files containing all potential transcripts in the first (benign) and second (tumor) samples respectively. The .stat file contains auxiliary information including estimated expression value for each gene. The .out file contains the predicted major splicing differences between the two samples.</p>
+
+<h5 id="running-compas-in-single-mode">Running COMPAS in single mode</h5>
+
+<p>While COMPAS is intended to be used as a comparative tool, you can run it on a single sample to get estimated gene expression levels. To do this, just skip Step 2 above and execute runCOMPAS.R directly:</p>
+
+<p>` runCOMPAS.R 1 -b 100000000 -i ./tumor.counts -o ./tumor -h ./tumor.hist -l 100 -n 382000000 `</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

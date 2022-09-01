@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>deFuse | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">deFuse</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://bitbucket.org/dranew/defuse">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="defuse">deFuse</h1>
+
+<p>deFuse is a software package for gene fusion discovery using RNA-Seq data. The software uses clusters of discordant paired end alignments to inform a split read alignment analysis for finding fusion boundaries. The software also employs a number of heuristic filters in an attempt to reduce the number of false positives and produces a fully annotated output for each predicted fusion.</p>
+
+<h2 id="publications">Publications</h2>
+
+<p>The deFuse algorithm and results from an application to ovarian tumours and sarcomas have been published in PLoS Computational Biology:</p>
+
+<p><a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1001138">deFuse: An Algorithm for Gene Fusion Discovery in Tumor RNA-Seq Data</a></p>
+
+<p>deFuse has been used to discover gene fusions in tumour samples for the following publications:</p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/22897847">Genetic alterations activating kinase and cytokine receptor signaling in high-risk acute lymphoblastic leukemia</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/22223660">14-3-3 fusion oncogenes in high-grade endometrial stromal sarcoma</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23583981">Whole-genome sequencing identifies genetic alterations in pediatric low-grade gliomas</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23817572">Recurrent somatic alterations of FGFR1 and NTRK2 in pilocytic astrocytoma</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/22294438">Integrated genome and transcriptome sequencing identifies a novel form of hybrid and aggressive prostate cancer</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/22927308">Poly-gene fusion transcripts and chromothripsis in prostate cancer</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23661334">Identification of recurrent FGFR3 fusion genes in lung cancer through kinome-centred RNA sequencing</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23212519">CUX1 is a haploinsufficient tumor suppressor gene on chromosome 7 frequently inactivated in acute myeloid leukemia</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23045605">Characterization of novel genomic alterations and therapeutic approaches using acute megakaryoblastic leukemia xenograft models</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/22496164">TBL1XR1/TP63: a novel recurrent gene fusion in B-cell non-Hodgkin lymphoma</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/23407549">CBFA2T3-GLIS2 fusion transcript is a novel common feature in pediatric, cytogenetically normal AML, not restricted to FAB M7 subtype</a></p>
+
+<p><a href="http://www.ncbi.nlm.nih.gov/pubmed/24413734">Recurrent mutations in epigenetic regulators, RHOA and FYN kinase in peripheral T cell lymphomas</a></p>
+
+<p><a href="http://www.nature.com/nature/journal/v471/n7338/full/nature09754.html">MHC class II transactivator CIITA is a recurrent gene fusion partner in lymphoid cancers, Nature 2011</a></p>
+
+<h2 id="issues">Issues</h2>
+
+<p>If you are having trouble running deFuse, please open an issue on the <a href="https://bitbucket.org/dranew/defuse/issues">bitbucket issue tracker</a>.</p>
+
+<h2 id="rna-seq-datasets">RNA-Seq Datasets</h2>
+
+<p>Four of the granulosa cell tumour datasets analysed in the PLoS Comp. Bio. paper have been submitted to the European Genome-Phenome Archive and can be accessed <a href="http://www.ebi.ac.uk/ega/datasets/EGAD00000000046">here</a>. A mapping between IDs used in the PLoS Comp. Bio. paper and the <a href="http://www.nejm.org/doi/full/10.1056/NEJMoa0902542">New England Journal of Medicine paper</a> is provided below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>N. Engl. J. Med ID</th>
+      <th>PLoS Comp. Bio. ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCT0026</td>
+      <td>GRC4</td>
+    </tr>
+    <tr>
+      <td>GCT0028</td>
+      <td>GRC1</td>
+    </tr>
+    <tr>
+      <td>GCT0077</td>
+      <td>GRC2</td>
+    </tr>
+    <tr>
+      <td>GCT0078</td>
+      <td>GRC3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="binary-distribution">Binary Distribution</h3>
+
+<p>The recommended way of installing deFuse is using <a href="http://conda.pydata.org/docs/download.html"><code class="language-plaintext highlighter-rouge">conda</code></a>.  Starting with version <code class="language-plaintext highlighter-rouge">v0.8.0</code>, OSX and Linux versions will be provided on my anaconda channel.  The Linux version is compiled using the <a href="https://bioconda.github.io">bioconda</a> docker image for optimal compatibility.</p>
+
+<p>With conda installed, deFuse can be installed by first adding my anaconda channel.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config --add channels 'conda-forge'
+conda config --add channels https://conda.anaconda.org/dranew
+conda config --add channels 'bioconda'
+conda config --add channels 'r'
+</code></pre></div></div>
+
+<p>Then install deFuse.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install defuse
+</code></pre></div></div>
+
+<p>In the future, deFuse will be added to the bioconda project.</p>
+
+<h3 id="from-source">From Source</h3>
+
+<h4 id="defuse-code">deFuse code</h4>
+
+<p>Download and untar/gunzip the deFuse code package to a directory.</p>
+
+<p>To build the deFuse toolset you must have the <strong>boost c++ development libraries</strong> installed. If they are not installed on your system you can download them from the <a href="http://www.boost.org/">boost website</a>. A full install of boost is not required. The easiest thing to do is to download the latest boost source tar.gz, extract it, then add the extracted path to the CPLUS_INCLUDE_PATH environment variable (in bash, <code class="language-plaintext highlighter-rouge">export CPLUS_INCLUDE_PATH=/boost/directory/:$CPLUS_INCLUDE_PATH</code>)</p>
+
+<p>To build the deFuse toolset, cd to the tools subdirectory and type <code class="language-plaintext highlighter-rouge">make</code>.</p>
+
+<h4 id="external-tools">External Tools</h4>
+
+<p>deFuse relies on other publically available tools as part of its pipeline. Some of these tools are not included with the deFuse download. Obtain these tools as detailed below.</p>
+
+<p>Download samtools:</p>
+
+<p>The latest version of samtools can be downloaded from the <a href="https://sourceforge.net/projects/samtools/files/samtools">samtools sourceforge site</a>.</p>
+
+<p>Set the <code class="language-plaintext highlighter-rouge">samtools_bin</code> entry in <code class="language-plaintext highlighter-rouge">config.txt</code> to the fully qualified paths of the <code class="language-plaintext highlighter-rouge">samtools</code> binary.</p>
+
+<p>Download bowtie:</p>
+
+<p>The latest version of bowtie can be downloaded from the <a href="http://sourceforge.net/projects/bowtie-bio/files/bowtie/">bowtie sourceforge site</a>. deFuse has been tested on version <code class="language-plaintext highlighter-rouge">0.12.5</code>.</p>
+
+<p>Set the <code class="language-plaintext highlighter-rouge">bowtie_bin</code> and <code class="language-plaintext highlighter-rouge">bowtie_build_bin</code> entries in <code class="language-plaintext highlighter-rouge">config.txt</code> to the fully qualified paths of the <code class="language-plaintext highlighter-rouge">bowtie</code> and <code class="language-plaintext highlighter-rouge">bowtie-build</code> binaries.</p>
+
+<p>Download blat and faToTwoBit:</p>
+
+<p>The latest blat tool suite can be downloaded from the <a href="http://hgdownload.cse.ucsc.edu/admin/exe/">ucsc website</a>. Download <code class="language-plaintext highlighter-rouge">blat</code> and <code class="language-plaintext highlighter-rouge">faToTwoBit</code> and set the <code class="language-plaintext highlighter-rouge">blat_bin</code> and <code class="language-plaintext highlighter-rouge">fatotwobit_bin</code> entries in <code class="language-plaintext highlighter-rouge">config.txt</code> to the fully qualified paths of the <code class="language-plaintext highlighter-rouge">blat</code> and <code class="language-plaintext highlighter-rouge">faToTwoBit</code> binaries.</p>
+
+<p>Download GMAP:</p>
+
+<p>The latest version of GMAP can be downloaded from the <a href="http://research-pub.gene.com/gmap/">gmap site</a>. Build with a default configuration. Do not worry about the <code class="language-plaintext highlighter-rouge">--with-gmapdb</code> build flag, deFuse will request a specific directory for the database anyway.</p>
+
+<p>Download R:</p>
+
+<p>The latest version of R can be downloaded from the <a href="http://www.r-project.org/">R project website</a>. Install R and then locate the R and Rscript executables, and set the <code class="language-plaintext highlighter-rouge">r_bin</code> and <code class="language-plaintext highlighter-rouge">rscript_bin</code> entries in <code class="language-plaintext highlighter-rouge">config.txt</code> to the path of those executables.</p>
+
+<p>Install the ada package. Run R, then at the prompt type <code class="language-plaintext highlighter-rouge">install.packages("ada")</code></p>
+
+<h3 id="reference-dataset">Reference Dataset</h3>
+
+<p>The reference dataset setup process has been simplified as of deFuse 0.6.0, and deFuse now automatically downloads all required files.</p>
+
+<p>Create a directory for storing the reference dataset and bowtie indices (herein referred to as <code class="language-plaintext highlighter-rouge">dataset_directory</code>).</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">defuse_create_ref.pl</code> script will download the genome and other source files, and build any derivative files including bowtie indices, gmap indices, and 2bit files. Run the following command. Expect this step to take at least 12 hours.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defuse_create_ref.pl -d dataset_directory
+</code></pre></div></div>
+
+<p>The default config file is located at <code class="language-plaintext highlighter-rouge">scripts/config.txt</code> and builds a <code class="language-plaintext highlighter-rouge">hg19</code> reference.  To modify the reference or other parameters, copy the config and specify the filename of the modified config on the command line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>defuse_create_ref.pl -d dataset_directory -c myconfig.txt
+</code></pre></div></div>
+
+<h2 id="input-data-formats">Input data formats</h2>
+
+<p>deFuse now takes only paired fastq as input. To help create paired fastq files, the scripts <code class="language-plaintext highlighter-rouge">fq_all2std.pl</code>, <code class="language-plaintext highlighter-rouge">qseq2fastq.pl</code> are available for export and qseq formats, and the tool <code class="language-plaintext highlighter-rouge">bamfastq</code> is available for bam files.</p>
+
+<blockquote>
+  <p>Important! Using fastqs converted directly from a position sorted bam will cause performance issues.  Difficult to align reads will end up in the same alignment jobs, resulting in a slower overall analysis.  It is recommended that you sort your bam by read name before converting to fastq.</p>
+</blockquote>
+
+<h2 id="how-to-run">How to run</h2>
+
+<p>Running the deFuse pipeline is simple as running a single script. To run the deFuse pipeline, run <code class="language-plaintext highlighter-rouge">defuse_run.pl</code> from the scripts directory with the appropriate command line parameters. The parameters are listed below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-c, --config
+Configuration Filename
+
+-d, --dataset
+Directory of reference genome indices
+
+-1, --1fastq 
+Fastq filename 1
+
+-2, --2fastq 
+Fastq filename 2
+
+-o, --output 
+Output Directory
+
+-r, --res 
+Main results filename (default: results.tsv in Output Directory)
+
+-a, --rescla 
+Results with a probability column filename (default: results.classify.tsv in Output Directory)
+
+-b, --resfil
+Filtered by the probability threshold results filename (default: results.filtered.tsv in Output Directory)
+
+-n, --name 
+Library Name
+
+-l, --local 
+Job Local Directory (default: Output Directory)
+
+-s, --submit 
+Submitter Type (default: direct)
+
+-p, --parallel 
+Maximum Number of Parallel Jobs (default: 1)
+</code></pre></div></div>
+
+<p>In the simplest case, deFuse can be run as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir
+</code></pre></div></div>
+
+<p>If you have modified the config during building of the reference genome and indices, specify your config on the command line of defuse_run.pl also.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -c myconfig.txt -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir
+</code></pre></div></div>
+
+<p>With the above parameters, deFuse will use reads from the files <code class="language-plaintext highlighter-rouge">reads1.fq</code> and <code class="language-plaintext highlighter-rouge">reads2.fq</code> the output will be in the <code class="language-plaintext highlighter-rouge">output_dir</code> directory.</p>
+
+<p><em><strong>note: the output directory should be different from the directory containing <code class="language-plaintext highlighter-rouge">reads1.fq</code> and <code class="language-plaintext highlighter-rouge">reads2.fq</code></strong></em></p>
+
+<p>The above example will not be the fastest way to run deFuse. Given a machine with multiple processes, 8 for example, run deFuse as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -p 8
+</code></pre></div></div>
+
+<p>If you want to specify output results’ files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -r output_dir/myresults.tsv -a path/to/my/dir/myresults_cl.tsv -b path/to/my/dir/myresults_fil.tsv
+</code></pre></div></div>
+
+<p>If you have access to a cluster, you may be able to run deFuse as follows for a sun grid engine (SGE) cluster:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -s sge
+</code></pre></div></div>
+
+<p>or as follows for a portable batch system (PBS) cluster:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -s pbs
+</code></pre></div></div>
+
+<p>or as follows for a LSF cluster:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -s lsf
+</code></pre></div></div>
+
+<p>In many cases it is beneficial to store intermediate results on a local disk rather than a network share. This can be done using the <code class="language-plaintext highlighter-rouge">--local</code> command line parameters as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run_defuse.pl -d dataset_directory -1 reads1.fq -2 reads2.fq -o output_dir -s lsf -l /localdisk
+</code></pre></div></div>
+
+<p>to specify that intermediate files be stored on at /localdisk.</p>
+
+<h2 id="output">Output</h2>
+
+<p>The output directory specified on the command line of <code class="language-plaintext highlighter-rouge">run_defuse.pl</code> will contain the files <code class="language-plaintext highlighter-rouge">results.tsv</code>, <code class="language-plaintext highlighter-rouge">results.filtered.tsv</code>, and <code class="language-plaintext highlighter-rouge">results.classify.tsv</code>. All three files have the same format, though <code class="language-plaintext highlighter-rouge">results.classify.tsv</code> has a probability column from the application of the classifier to <code class="language-plaintext highlighter-rouge">results.tsv</code>, and <code class="language-plaintext highlighter-rouge">results.filtered.tsv</code> has been filtered according to the threshold probability as set in <code class="language-plaintext highlighter-rouge">config.tsv</code>. The file format is tab delimited with one prediction per line, and the following fields per prediction.</p>
+
+<h3 id="identification">Identification</h3>
+
+<ul>
+  <li><strong>cluster_id</strong> : random identifier assigned to each prediction</li>
+  <li><strong>library_name</strong> : library name given on the command line of deFuse</li>
+  <li><strong>gene1</strong> : ensembl id of gene 1</li>
+  <li><strong>gene2</strong> : ensembl id of gene 2</li>
+  <li><strong>transcript1</strong> : transcript id of gene 1, or ‘NA’ for non-exonic fusions</li>
+  <li><strong>transcript2</strong> : transcript id of gene 2, or ‘NA’ for non-exonic fusions</li>
+  <li><strong>gene_name1</strong> : name of gene 1</li>
+  <li><strong>gene_name2</strong> : name of gene 2</li>
+</ul>
+
+<h3 id="evidence">Evidence</h3>
+
+<ul>
+  <li><strong>break_predict</strong> : breakpoint prediction method, denovo or splitr, that is considered most reliable</li>
+  <li><strong>concordant_ratio</strong> : proportion of spanning reads considered concordant by blat</li>
+  <li><strong>denovo_min_count</strong> : minimum kmer count across denovo assembled sequence</li>
+  <li><strong>denovo_sequence</strong> : fusion sequence predicted by debruijn based denovo sequence assembly</li>
+  <li><strong>denovo_span_pvalue</strong> : p-value, lower values are evidence the prediction is a false positive</li>
+  <li><strong>gene_align_strand1</strong> : alignment strand for spanning read alignments to gene 1</li>
+  <li><strong>gene_align_strand2</strong> : alignment strand for spanning read alignments to gene 2</li>
+  <li><strong>min_map_count</strong> : minimum of the number of genomic mappings for each spanning read</li>
+  <li><strong>max_map_count</strong> : maximum of the number of genomic mappings for each spanning read</li>
+  <li><strong>mean_map_count</strong> : average of the number of genomic mappings for each spanning read</li>
+  <li><strong>num_multi_map</strong> : number of spanning reads that map to more than one genomic location</li>
+  <li><strong>span_count</strong> : number of spanning reads supporting the fusion</li>
+  <li><strong>span_coverage1</strong> : coverage of spanning reads aligned to gene 1 as a proportion of expected coverage</li>
+  <li><strong>span_coverage2</strong> : coverage of spanning reads aligned to gene 2 as a proportion of expected coverage</li>
+  <li><strong>span_coverage_min</strong> : minimum of span_coverage1 and span_coverage2</li>
+  <li><strong>span_coverage_max</strong> : maximum of span_coverage1 and span_coverage2</li>
+  <li><strong>splitr_count</strong> : number of split reads supporting the prediction</li>
+  <li><strong>splitr_min_pvalue</strong> : p-value, lower values are evidence the prediction is a false positive</li>
+  <li><strong>splitr_pos_pvalue</strong> : p-value, lower values are evidence the prediction is a false positive</li>
+  <li><strong>splitr_sequence</strong> : fusion sequence predicted by split reads</li>
+  <li><strong>splitr_span_pvalue</strong> : p-value, lower values are evidence the prediction is a false positive</li>
+</ul>
+
+<h3 id="annotation">Annotation</h3>
+
+<ul>
+  <li><strong>adjacent</strong> : fusion between adjacent genes</li>
+  <li><strong>altsplice</strong> : fusion likely the product of alternative splicing between adjacent genes</li>
+  <li><strong>break_adj_entropy1</strong> : di-nucleotide entropy of the 40 nucleotides adjacent to the fusion splice in gene 1</li>
+  <li><strong>break_adj_entropy2</strong> : di-nucleotide entropy of the 40 nucleotides adjacent to the fusion splice in gene 2</li>
+  <li><strong>break_adj_entropy_min</strong> : minimum of break_adj_entropy1 and break_adj_entropy2</li>
+  <li><strong>breakpoint_homology</strong> : number of nucleotides at the fusion splice that align equally well to gene 1 or gene 2</li>
+  <li><strong>breakseqs_estislands_percident</strong> : maximum percent identity of fusion sequence alignments to est islands</li>
+  <li><strong>cdna_breakseqs_percident</strong> : maximum percent identity of fusion sequence alignments to cdna</li>
+  <li><strong>deletion</strong> : fusion produced by a genomic deletion</li>
+  <li><strong>est_breakseqs_percident</strong> : maximum percent identity of fusion sequence alignments to est</li>
+  <li><strong>eversion</strong> : fusion produced by a genomic eversion</li>
+  <li><strong>exonboundaries</strong> : fusion splice at exon boundaries</li>
+  <li><strong>expression1</strong> : expression of gene 1 as number of concordant pairs aligned to exons</li>
+  <li><strong>expression2</strong> : expression of gene 2 as number of concordant pairs aligned to exons</li>
+  <li><strong>gene_chromosome1</strong> : chromosome of gene 1</li>
+  <li><strong>gene_chromosome2</strong> : chromosome of gene 2</li>
+  <li><strong>gene_end1</strong> : end position for gene 1</li>
+  <li><strong>gene_end2</strong> : end position for gene 2</li>
+  <li><strong>gene_location1</strong> : location of breakpoint in gene 1</li>
+  <li><strong>gene_location2</strong> : location of breakpoint in gene 2</li>
+  <li><strong>gene_start1</strong> : start of gene 1</li>
+  <li><strong>gene_start2</strong> : start of gene 2</li>
+  <li><strong>gene_strand1</strong> : strand of gene 1</li>
+  <li><strong>gene_strand2</strong> : strand of gene 2</li>
+  <li><strong>genome_breakseqs_percident</strong> : maximum percent identity of fusion sequence alignments to genome</li>
+  <li><strong>genomic_break_pos1</strong> : genomic position in gene 1 of fusion splice / breakpoint</li>
+  <li><strong>genomic_break_pos2</strong> : genomic position in gene 2 of fusion splice / breakpoint</li>
+  <li><strong>genomic_strand1</strong> : genomic strand in gene 1 of fusion splice / breakpoint, retained sequence upstream on this strand, breakpoint is downstream</li>
+  <li><strong>genomic_strand2</strong> : genomic strand in gene 2 of fusion splice / breakpoint, retained sequence upstream on this strand, breakpoint is downstream</li>
+  <li><strong>genomic_starts1</strong> : comma separated list of starts of fusion sequence alignment in gene 1</li>
+  <li><strong>genomic_starts2</strong> : comma separated list of starts of fusion sequence alignment in gene 2</li>
+  <li><strong>genomic_ends1</strong> : comma separated list of ends of fusion sequence alignment in gene 1</li>
+  <li><strong>genomic_ends2</strong> : comma separated list of ends of fusion sequence alignment in gene 2</li>
+  <li><strong>interchromosomal</strong> : fusion produced by an interchromosomal translocation</li>
+  <li><strong>interrupted_index1</strong> : ratio of coverage before and after the fusion splice / breakpoint in gene 1</li>
+  <li><strong>interrupted_index2</strong> : ratio of coverage before and after the fusion splice / breakpoint in gene 2</li>
+  <li><strong>inversion</strong> : fusion produced by genomic inversion</li>
+  <li><strong>orf</strong> : fusion combines genes in a way that preserves a reading frame</li>
+  <li><strong>probability</strong> : probability produced by classification using adaboost and example positives/negatives (only given in results.classified.tsv)</li>
+  <li><strong>read_through</strong> : fusion involving adjacent potentially resulting from co-transcription rather than genome rearrangement</li>
+  <li><strong>repeat_proportion1</strong> : proportion of the spanning reads in gene 1 that span a repeat region</li>
+  <li><strong>repeat_proportion2</strong> : proportion of the spanning reads in gene 2 that span a repeat region</li>
+  <li><strong>max_repeat_proportion</strong> : max of repeat_proportion1 and repeat_proportion2</li>
+  <li><strong>splice_score</strong> : number of nucleotides similar to GTAG at fusion splice</li>
+  <li><strong>num_splice_variants</strong> : number of potential splice variants for this gene pair</li>
+  <li><strong>splicing_index1</strong> : number of concordant pairs in gene 1 spanning the fusion splice / breakpoint, divided by number of spanning reads supporting the fusion with gene 2</li>
+  <li><strong>splicing_index2</strong> : number of concordant pairs in gene 2 spanning the fusion splice / breakpoint, divided by number of spanning reads supporting the fusion with gene 1</li>
+</ul>
+
+<h2 id="supporting-reads">Supporting Reads</h2>
+
+<p>Supporting reads for a given fusion prediction can be obtained using the <code class="language-plaintext highlighter-rouge">get_reads.pl</code> script. For a prediction with <code class="language-plaintext highlighter-rouge">cluster_id=123</code> run the following command to obtain the spanning and split reads supporting the fusion.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get_reads.pl -c config.txt -o output_dir -i 123
+</code></pre></div></div>
+
+<p>Split reads are output first as demarcated by the heading <code class="language-plaintext highlighter-rouge">Split Reads:</code>. The third line of the output corresponds to the approximate sequence of the fusion boundary to which potential split reads are aligned. Subsequent lines alternate between showing a read id and split alignment.</p>
+
+<p>Spanning reads are output second as demarcated by the heading <code class="language-plaintext highlighter-rouge">Spanning Reads:</code>. The spanning read information is tab separated and provides information about the alignments of supporting spanning reads. The fields are:</p>
+
+<ul>
+  <li>read id</li>
+  <li>encoded read end (0 -&gt; 1, 1 -&gt; 2)</li>
+  <li>chromosome of alignment</li>
+  <li>strand of alignment</li>
+  <li>start of alignment</li>
+  <li>end of alignment</li>
+</ul>
+
+<p>To obtain the original sequence for spanning reads, search the reads.1.fastq file and reads.2.fastq file in the output directory for the fastq entry with the associated read id.</p>
+
+<h3 id="caveats">Caveats</h3>
+
+<p>You cannot run get_reads.pl if you have removed the temporary files from the output folder. The following files are required:</p>
+
+<ul>
+  <li>concordant.read.stats</li>
+  <li>clusters.sc</li>
+  <li>reads.split.catalog</li>
+  <li>job/reads.*.improper.sam</li>
+  <li>job/reads.*.spanning.filelist</li>
+  <li>job/reads.<em>.spanning/</em></li>
+</ul>
+
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

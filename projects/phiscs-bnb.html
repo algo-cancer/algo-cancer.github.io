@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PhISCS-BnB | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">PhISCS-BnB</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/algo-cancer/PhISCS-BnB">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="phiscs-bnb">PhISCS-BnB</h1>
+
+<p>PhISCS-BnB is a fast tool for reconstructing the perfect tumor phylogeny using single-cell data via branch and bound.</p>
+
+<h2 id="contents">Contents</h2>
+<ol>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#running">Running</a>
+    <ul>
+      <li><a href="#input">Input</a></li>
+      <li><a href="#output">Output</a></li>
+      <li><a href="#parameters">Parameters</a></li>
+    </ul>
+  </li>
+  <li><a href="#example">Example</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
+
+<p><a name="installation"></a></p>
+<h2 id="installation">Installation</h2>
+<p>PhISCS-BnB is written in Python. It supports Python 3. Currently it is intended to be run on POSIX-based systems (only Linux and macOS have been tested).</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">~$</span><span class="w"> </span>git clone https://github.com/algo-cancer/PhISCS-BnB.git
+<span class="gp">~$</span><span class="w"> </span><span class="nb">cd </span>PhISCS-BnB
+<span class="gp">~$</span><span class="w"> </span>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+<span class="gp">~$</span><span class="w"> </span>python main.py <span class="nt">--help</span>
+</code></pre></div></div>
+
+<p><a name="running"></a></p>
+<h2 id="running">Running</h2>
+
+<p><a name="input"></a></p>
+<h3 id="input">Input</h3>
+
+<p>Single-cell input is assumed to be represented in the form of ternary, <strong>tab-delimited</strong>, matrix with rows corresponding to single-cells and columns corresponding to mutations. We assume that this file contains headers and that matrix is ternary matrix with 0 denoting the absence and 1 denoting the presence of mutation in a given cell, whereas ? represents the lack of information about presence/absence of mutation in a given cell (i.e. missing entry). <strong>In order to simplify parsing of the matrix, we also assume that upper left corner equals to string <code class="language-plaintext highlighter-rouge">cellID/mutID</code></strong>.</p>
+
+<p>Below is an example of single-cell data matrix. Note that mutation and cell names are arbitrary strings not containing tabs or spaces, however they must be unique.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cellID/mutID  mut0  mut1  mut2  mut3  mut4  mut5  mut6  mut7
+cell0         0     0     ?     0     0     0     0     0
+cell1         0     ?     1     0     0     0     1     1
+cell2         0     0     1     0     0     0     1     1
+cell3         1     1     0     0     0     0     0     0
+cell4         0     0     1     0     0     0     0     0
+cell5         1     0     0     0     0     0     0     0
+cell6         0     0     1     0     0     0     1     1
+cell7         0     0     1     0     0     0     0     0
+cell8         ?     0     0     0     ?     0     ?     1
+cell9         0     1     0     0     0     0     0     0
+</code></pre></div></div>
+
+<p><a name="output"></a></p>
+<h3 id="output">Output</h3>
+<p>The program will generate a file in <strong>OUT_DIR</strong> folder (which is set by argument -o or –outDir). This folder will be created automatically if it does not exist.</p>
+
+<p>The output matrix is also a tab-delimited file having the same format as the input matrix, except that eliminated mutations (columns) are excluded (so, in case when mutation elimination is allowed, this matrix typically contains less columns than the input matrix). Output matrix represents genotypes-corrected matrix (where false positives and false negatives from the input are corrected and each of the missing entries set to 0 or 1). Suppose the input file is <strong>INPUT_MATRIX.ext</strong>, the output matrix will be stored in file <strong>OUT_DIR/INPUT_MATRIX.CFMatrix</strong>. For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> input file: data/ALL2.SC
+output file: OUT_DIR/ALL2.CFMatrix
+</code></pre></div></div>
+
+<p><a name="parameters"></a></p>
+<h3 id="parameters">Parameters</h3>
+<p>| Parameter  | Description                              | Default  | Mandatory      |
+|————|——————————————|———-|—————-|
+| -i         | Path to single-cell data matrix file     | -        | :radio_button: |
+| -o         | Output directory                         | current  | :white_circle: |
+| -b         | Bounding algorithm                       | 1        | :white_circle: |
+| -t         | Draw output tree with Graphviz           | -        | :white_circle: |</p>
+
+<p><a name="example"></a></p>
+<h2 id="example">Example</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">~$</span><span class="w"> </span>python main.py <span class="nt">-i</span> example/data1.SC <span class="nt">-o</span> example <span class="nt">-b</span> 2 <span class="nt">-t</span>
+<span class="go">
+[02/04 12:53:49] Size: (20, 20)
+[02/04 12:53:49] NAValue: 3
+</span><span class="gp">[02/04 12:53:49] #</span>Zeros: 226
+<span class="gp">[02/04 12:53:49] #</span>Ones: 94
+<span class="gp">[02/04 12:53:49] #</span>NAs: 80
+<span class="go">[02/04 12:53:49] Time: 00:00:00
+</span><span class="gp">[02/04 12:53:49] #</span>0-&gt;1: 10
+<span class="gp">[02/04 12:53:49] #</span>1-&gt;0: 0
+<span class="gp">[02/04 12:53:49] #</span>na-&gt;0: 60
+<span class="gp">[02/04 12:53:49] #</span>na-&gt;1: 20
+<span class="go">[02/04 12:53:49] isDone: True
+[02/04 12:53:49] The output phylogenetic tree is in 'example' directory!
+</span></code></pre></div></div>
+
+<p>This is the clonal tree that has been created:</p>
+<p align="center">
+  <img src="example/data1.png" height="400" />
+</p>
+
+<p>For each node, the number inside the brackets denotes its node id and the number inside the parentheses shows the total number of mutations occurring on the path from the germline (root) to the node (i.e., the total number of mutations harbored by the node). The edge labels represent the number of mutations occurring between a parent and its child node. The complete list of mutations occurring at each edge can be found <code class="language-plaintext highlighter-rouge">data1.mutsAtEdges</code> file which contains:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[12]-&gt;[11]: mut7 mut8 mut9 mut10 mut11
+[12]-&gt;[10]: mut0 mut2
+[11]-&gt;[9]: mut15 mut16 mut17
+[10]-&gt;[8]: mut1
+[9]-&gt;[5]: mut18
+[8]-&gt;[7]: mut3
+[8]-&gt;[1]: mut12 mut14
+[7]-&gt;[6]: mut5
+[6]-&gt;[4]: mut4
+[5]-&gt;[2]: mut19
+[4]-&gt;[3]: mut6
+[1]-&gt;[0]: mut13
+
+</code></pre></div></div>
+
+<p><a name="contact"></a></p>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions please e-mail us at esadeqia@iu.edu or frashidi@iu.edu.</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

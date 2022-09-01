@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DeStruct | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">DeStruct</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/amcpherson/destruct">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="destruct"><strong>DeStruct</strong></h1>
+
+<p>Destruct is a tool for joint prediction of rearrangement breakpoints from single or multiple tumour samples.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="installing-from-conda">Installing from conda</h3>
+
+<p>The recommended method of installation for destruct is using <code class="language-plaintext highlighter-rouge">conda</code>.  First install <a href="https://store.continuum.io/cshop/anaconda/">anaconda python</a> from the continuum website.  Then add my channel, and the bioconda channel, and install destruct as follows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda config --add channels https://conda.anaconda.org/dranew
+conda config --add channels 'bioconda'
+conda install destruct
+</code></pre></div></div>
+
+<h3 id="installing-from-source">Installing from source</h3>
+
+<h4 id="clone-source-code">Clone Source Code</h4>
+
+<p>To install the code, first clone from bitbucket.  A recursive clone is preferred to pull in all submodules.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive git@bitbucket.org:dranew/destruct.git
+</code></pre></div></div>
+
+<h4 id="dependencies">Dependencies</h4>
+
+<p>To install from source you will need several dependencies.  A list of dependencies can be found in the <code class="language-plaintext highlighter-rouge">conda</code> <code class="language-plaintext highlighter-rouge">yaml</code> file in the repo at <code class="language-plaintext highlighter-rouge">conda/destruct/meta.yaml</code>.</p>
+
+<h4 id="build-executables-and-install">Build executables and install</h4>
+
+<p>To build executables and install the destruct code as a python package run the following command in the destruct repo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python setup.py install
+</code></pre></div></div>
+
+<h2 id="setup">Setup</h2>
+
+<p>Download and setup of the reference genome is automated.  Select a directory on your system that will contain the reference data, herein referred to as <code class="language-plaintext highlighter-rouge">$ref_data_dir</code>.  The <code class="language-plaintext highlighter-rouge">$ref_data_dir</code> directory will be used in many of the subsequent scripts when running destruct.</p>
+
+<p>Download the reference data and build the required indexes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>destruct create_ref_data $ref_data_dir
+</code></pre></div></div>
+
+<h2 id="run">Run</h2>
+
+<h3 id="input-data">Input Data</h3>
+
+<p>Destruct takes multiple bam files as input.  Bam files can be multiple samples from the same patient, or a cohort of patients.</p>
+
+<h3 id="running-destruct">Running Destruct</h3>
+
+<p>Running destruct involves invoking a single command, <code class="language-plaintext highlighter-rouge">destruct run</code>.  The result of destruct is a set of tables in TSV format.  Suppose we would like to run destruct on tumour bam file <code class="language-plaintext highlighter-rouge">$tumour_bam</code> and normal bam file <code class="language-plaintext highlighter-rouge">$normal_bam</code>.  The following command will predict breakpoints jointly on these bam files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>destruct run $ref_data_dir \
+    $breakpoint_table $breakpoint_library_table \
+    $breakpoint_read_table \
+    --bam_files $tumour_bam $normal_bam \
+    --lib_ids tumour normal \
+    --tmpdir $tmp
+</code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">$breakpoint_table</code>, <code class="language-plaintext highlighter-rouge">$breakpoint_library_table</code>, and <code class="language-plaintext highlighter-rouge">$breakpoint_read_table </code> are output tables, and <code class="language-plaintext highlighter-rouge">$tmp</code> is a unique temporary directory.  If you need to stop and restart the script, using the same temporary directory will allow the scripts to restart where it left off.</p>
+
+<p>For parallelism options see the section <a href="#markdown-header-parallelism-using-pypeliner">Parallelism using pypeliner</a>.</p>
+
+<h2 id="testing-your-installation">Testing Your Installation</h2>
+
+<p>To test your install, a script is provided to generate a bam.  First install dwgsim.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install dwgsim bwa
+</code></pre></div></div>
+
+<p>Clone the destruct repo to obtain additional scripts.  Change to the destruct repo directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@bitbucket.org:dranew/destruct.git
+cd destruct
+</code></pre></div></div>
+
+<p>Setup a chromosome 20, 21 specific reference dataset.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>destruct create_ref_data \
+    -c examples/chromosome_20_21_user_config.py \
+    destruct_ref_data/
+</code></pre></div></div>
+
+<p>Generate a bam file using the dwgsim read simulator.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python destruct/benchmark/generate_bam.py \
+    examples/breakpoint_simulation_config.yaml \
+    destruct_ref_data/ \
+    test_raw_data \
+    test.bam \
+    test.fasta \
+    test_breakpoints.tsv \
+    --submit local
+</code></pre></div></div>
+
+<p>Run destruct on the simulated bam file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>destruct run \
+    --config examples/chromosome_20_user_config.py \
+    destruct_ref_data/ \
+    breaks.tsv break_libs.tsv break_reads.tsv \
+    --bam_files test.bam \
+    --lib_ids test_sample \
+    --raw_data_dir destruct_raw_data/ \
+    --submit local
+</code></pre></div></div>
+
+<p>You can then compare the output breaks.tsv to test_breakpoints.tsv.</p>
+
+<h3 id="output-file-formats">Output File Formats</h3>
+
+<h4 id="breakpoint-table">Breakpoint Table</h4>
+
+<p>The breakpoint library table contains information per breakpoint.  The file is tab separated with the first line as the header and contains the following columns.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prediction_id</code>: Unique identifier of the breakpoint prediction</li>
+  <li><code class="language-plaintext highlighter-rouge">chromosome_1</code>: Chromosome for breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">strand_1</code>: Strand for breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">position_1</code>: Position of breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_id1</code>: Ensembl gene id for gene at or near breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_name1</code>: Name of the gene at or near breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_location1</code>: Location of the gene with respect to the breakpoint for breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">chromosome_2</code>: Chromosome for breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">strand_2</code>: Strand for breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">position_2</code>: Position of breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_id2</code>: Ensembl gene id for gene at or near breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_name2</code>: Name of the gene at or near breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">gene_location2</code>: Location of the gene with respect to the breakpoint for breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: Breakpoint orientation type deletion: +-, inversion: ++ or –, duplication -+, translocation: 2 different chromosomes</li>
+  <li><code class="language-plaintext highlighter-rouge">num_reads</code>: Total number of discordant reads</li>
+  <li><code class="language-plaintext highlighter-rouge">num_unique_reads</code>: Total number of discordant reads, potential PCR duplicates removed</li>
+  <li><code class="language-plaintext highlighter-rouge">num_split</code>: Total number of discordant reads split by the breakpoint</li>
+  <li><code class="language-plaintext highlighter-rouge">num_inserted</code>: Number of untemplated nucleotides inserted at the breakpoint</li>
+  <li><code class="language-plaintext highlighter-rouge">homology</code>: Sequence homology at the breakpoint</li>
+  <li><code class="language-plaintext highlighter-rouge">dgv_ids</code>: Database of genomic variants annotation for germline variants</li>
+  <li><code class="language-plaintext highlighter-rouge">sequence</code>: Sequence as predicted by discordant reads and possibly split reads</li>
+  <li><code class="language-plaintext highlighter-rouge">inserted</code>: Nucleotides inserted at the breakpoint</li>
+  <li><code class="language-plaintext highlighter-rouge">mate_score</code>: average score of mate reads aligning as if concordant</li>
+  <li><code class="language-plaintext highlighter-rouge">template_length_1</code>: length of region to which discordant reads align at breakend 1</li>
+  <li><code class="language-plaintext highlighter-rouge">template_length_2</code>: length of region to which discordant reads align at breakend 2</li>
+  <li><code class="language-plaintext highlighter-rouge">log_cdf</code>: mean cdf of discordant read alignment likelihood</li>
+  <li><code class="language-plaintext highlighter-rouge">log_likelihood</code>: mean likelihood of discordant read alignments</li>
+  <li><code class="language-plaintext highlighter-rouge">template_length_min</code>: minimum of <code class="language-plaintext highlighter-rouge">template_length_1</code> and <code class="language-plaintext highlighter-rouge">template_length_2</code></li>
+</ul>
+
+<h4 id="breakpoint-library-table">Breakpoint Library Table</h4>
+
+<p>The breakpoint library table contains information per breakpoint per input dataset.  The file is tab separated with the first line as the header and contains the following columns.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prediction_id</code>: Unique identifier of the breakpoint prediction</li>
+  <li><code class="language-plaintext highlighter-rouge">library_id</code>: ID of the dataset as given on the command line or in the input dataset table</li>
+  <li><code class="language-plaintext highlighter-rouge">num_reads</code>: Number of reads for this dataset</li>
+  <li><code class="language-plaintext highlighter-rouge">num_unique_reads</code>: Number of reads for this dataset, potential PCR duplicates removed</li>
+</ul>
+
+<h4 id="breakpoint-read-table">Breakpoint Read Table</h4>
+
+<p>The breakpoint library table contains information per breakpoint per discordant read.  The file is tab separated with the first line as the header and contains the following columns.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">prediction_id</code>: Unique identifier of the breakpoint prediction</li>
+  <li><code class="language-plaintext highlighter-rouge">library_id</code>: ID of the dataset as given on the command line or in the input dataset table</li>
+  <li><code class="language-plaintext highlighter-rouge">fragment_id</code>: ID of the discordant read</li>
+  <li><code class="language-plaintext highlighter-rouge">read_end</code>: End of the paired end read</li>
+  <li><code class="language-plaintext highlighter-rouge">seq</code>: Read sequence</li>
+  <li><code class="language-plaintext highlighter-rouge">qual</code>: Read quality</li>
+  <li><code class="language-plaintext highlighter-rouge">comment</code>: Read comment</li>
+  <li><code class="language-plaintext highlighter-rouge">filtered</code>: The read was filtered prior to finalizing the prediction</li>
+</ul>
+
+<h2 id="parallelism-using-pypeliner">Parallelism Using Pypeliner</h2>
+
+<p>Destruct uses the pypeliner python library for parallelism.  Several of the scripts described above will complete more quickly on a multi-core machine or on a cluster.</p>
+
+<p>To run a script in multicore mode, using a maximum of 4 cpus, add the following command line option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--maxjobs 4
+</code></pre></div></div>
+
+<p>To run a script on a cluster with qsub/qstat, add the following command line option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--submit asyncqsub
+</code></pre></div></div>
+
+<p>Often a call to qsub requires specific command line parameters to request the correct queue, and importantly to request the correct amount of memory.  To allow correct calls to qsub, use the <code class="language-plaintext highlighter-rouge">--nativespec</code> command line option, and use the placeholder <code class="language-plaintext highlighter-rouge">{mem}</code> which will be replaced by the amount of memory (in gigabytes) required for each job launched with qsub.  For example, to use qsub, and request queue <code class="language-plaintext highlighter-rouge">all.q</code> and set the <code class="language-plaintext highlighter-rouge">mem_free</code> to the required memory, add the following command line options:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--submit asyncqsub --nativespec "-q all.q -l mem_free={mem}G"
+</code></pre></div></div>
+
+<h1 id="build">Build</h1>
+
+<h2 id="docker-builds">Docker builds</h2>
+
+<p>To build a destruct docker image, for instance version v0.4.13, run the following docker command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build --build-arg app_version=0.4.17 -t amcpherson/destruct:0.4.17 .
+docker push amcpherson/destruct:0.4.17
+</code></pre></div></div>
+
+<h1 id="benchmarking">Benchmarking</h1>
+
+<h2 id="setup-1">Setup</h2>
+
+<p>The following requirements should be installed with conda:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create -n lumpy lumpy-sv
+conda create -n delly -c dranew delly==0.7.3
+conda create -n sambamba sambamba
+conda create -n bcftools bcftools
+conda create -n vcftools -c bioconda perl-vcftools-vcf
+conda create -n htslib htslib
+</code></pre></div></div>
+
+<p>Add the requirements to your path with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATH=$PATH:/opt/conda/envs/lumpy/bin/
+PATH=$PATH:/opt/conda/envs/delly/bin/
+LD_LIBRARY_PATH=/opt/conda/envs/delly/lib/
+PATH=$PATH:/opt/conda/envs/sambamba/bin/
+PATH=$PATH:/opt/conda/envs/bcftools/bin/
+PATH=$PATH:/opt/conda/envs/vcftools/bin/
+PATH=$PATH:/opt/conda/envs/htslib/bin/
+</code></pre></div></div>
+
+<p>You may also need to link sambamba into the lumpy install:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -s /opt/conda/envs/sambamba/bin/sambamba /opt/conda/envs/lumpy/bin/sambamba
+</code></pre></div></div>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

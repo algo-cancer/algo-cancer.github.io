@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hit'nDRIVE | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">Hit'nDRIVE</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/hitndrive">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="hitndrive">HIT’nDRIVE</h1>
+
+<p>HIT’nDRIVE (Shrestha et al. 2017), is a combinatorial algorithm to prioritize cancer driver genes. It integrates changes in genome (sequence altered genes) with changes in transcriptome (gene expression outliers) to identify patient-specific genomic alterations that can collectively influence the dysregulated transcriptome of the patient.</p>
+
+<p>HIT’nDRIVE aims to solve the “random-walk facility location” (RWFL) problem on a gene/protein interaction network – thus differs from the standard facility location problem by its use of  “hitting time”, the expected minimum number of hops in a random-walk originating from any sequence altered gene (i.e. a potential driver) to reach an expression altered gene, as the distance measure. HIT’nDRIVE reduces RWFL (with multi-hitting time as the distance) to a weighted multi-set cover problem, which it solves as an integer linear program (ILP).</p>
+
+<h2 id="publications">Publications</h2>
+<ul>
+  <li>Shrestha R, Hodzic E, Sauerwald T, Dao P, Yeung J, Wang K, Anderson S, Haffari G, Collins CC, and Sahinalp SC. 2017. HIT’nDRIVE: Patient-Specific Multi-Driver Gene Prioritization for Precision Oncology. Genome Research. doi:10.1101/gr.221218.117 (http://dx.doi.org/10.1101/gr.221218.117)</li>
+  <li>Shrestha R, Hodzic E, Yeung J, Wang K, Sauerwald T, Dao P, Anderson S, Beltran H, Rubin MA, Collins CC, Haffari G and Sahinalp SC. 2014. HIT’nDRIVE: Multi-driver gene prioritization based on hitting time. Research in Computational Molecular Biology: 18th Annual International Conference, RECOMB 2014, Pittsburgh, PA, USA, April 2-5, 2014, 293–306. (https://link.springer.com/chapter/10.1007/978-3-319-05269-4_23)</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+<h4 id="system-requirements">System Requirements</h4>
+<ul>
+  <li>make (version 3.81 or higher)</li>
+  <li>g++ (GCC version 4.1.2 or higher)</li>
+  <li>IBM ILOG CPLEX Optimization Studio</li>
+</ul>
+
+<h4 id="installation">Installation</h4>
+<p>To install HIT’nDRIVE, clone the repo using following command</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:sfu-compbio/hitndrive.git
+</code></pre></div></div>
+
+<h4 id="compile-hitndrive">Compile HIT’nDRIVE</h4>
+<p>In the <code class="language-plaintext highlighter-rouge">Makefile</code>, set <code class="language-plaintext highlighter-rouge">CPLEXDIR</code> to the path of your root CPLEX folder. Set <code class="language-plaintext highlighter-rouge">CPLEX_BUILD</code> to the name of your build - the build can be identified from root folder in the following manner:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">${</span><span class="nv">CPLEXDIR</span><span class="k">}</span>/cplex/bin/<span class="k">${</span><span class="nv">CPLEX_BUILD</span><span class="k">}</span>/
+</code></pre></div></div>
+<p>Simply run <code class="language-plaintext highlighter-rouge">make</code> command in the <code class="language-plaintext highlighter-rouge">src</code> folder. It will create executables in the <code class="language-plaintext highlighter-rouge">src</code> folder.</p>
+
+<h3 id="run-hitndrive---a-demo-script">Run HIT’nDRIVE - a demo script</h3>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inputFolder <span class="o">=</span> <span class="s2">"insertPath"</span>
+workingFolder <span class="o">=</span> <span class="s2">"insertPath"</span>
+network <span class="o">=</span> <span class="s2">"ppi network file path"</span>
+
+./buildGraph <span class="nt">-i</span> <span class="k">${</span><span class="nv">inputFolder</span><span class="k">}</span>/<span class="k">${</span><span class="nv">network</span><span class="k">}</span> <span class="nt">-f</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span> <span class="nt">-o</span> ppi
+./getHTMatrixInversion <span class="nt">-i</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span>/ppi.graph <span class="nt">-o</span> ppi <span class="nt">-f</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span>
+./hitndrive <span class="nt">-a</span> <span class="k">${</span><span class="nv">inputFolder</span><span class="k">}</span>/alterations.txt <span class="nt">-o</span> <span class="k">${</span><span class="nv">inputFolder</span><span class="k">}</span>/outliers.txt <span class="nt">-g</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span>/ppi.nodes <span class="nt">-i</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span>/ppi.ht <span class="nt">-f</span> <span class="k">${</span><span class="nv">workingFolder</span><span class="k">}</span> <span class="nt">-n</span> hitndriveOutput <span class="nt">-l</span> 0.9 <span class="nt">-b</span> 0.4 <span class="nt">-m</span> 0.8
+</code></pre></div></div>
+
+<ul>
+  <li>The list of drivers will be in the <code class="language-plaintext highlighter-rouge">${workingFolder}/hitndriveOutput.drivers</code> file.</li>
+</ul>
+
+<h3 id="step-1-buildgraph">Step-1: <code class="language-plaintext highlighter-rouge">buildGraph</code></h3>
+<p><strong>Usage:</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./buildGraph <span class="nt">-i</span> <span class="o">[</span>input edge collection] <span class="nt">-f</span> <span class="o">[</span>output folder] <span class="nt">-o</span> <span class="o">[</span>output graph file name]
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-i</code></td>
+      <td>input edge collection</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-o</code></td>
+      <td>output graph file name</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-f</code></td>
+      <td>output folder (optional)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">- i</code> :    This parameter represents an edge collection file where each row represents an edge in form of two vertex names followed by a weight, separated by whitespace. All edges are treated as undirected. There is no header row. e.g.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	V1 V2 1
+	V5 V7 1
+	...
+	Vn Vk 1
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">- o</code> :    This parameter determines the name and path of two output files (with exptensions <code class="language-plaintext highlighter-rouge">.graph</code> and <code class="language-plaintext highlighter-rouge">.nodes</code>). The first is the path to output file in which network information is stored as graph structure (<code class="language-plaintext highlighter-rouge">.graph</code>). First row contains number of vertices and directed edges. The following lines contain, for each vertex, the size of its neighbourhood followed by a pairs of numbers representing index of each neighbor and weight of the edge. e.g.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	10971 428596
+	1 1 1
+	1 0 1
+	1 3 1
+	1 2 1
+	113 5 1 
+	...
+</code></pre></div></div>
+<p>The second is the path to file which contains node names listed in the order they are discovered in the input file (<code class="language-plaintext highlighter-rouge">.nodes</code>). e.g.:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    	node_1
+	node_2
+	...
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">- f</code> :    Path to output folder the filename path is relative to. The default value is <code class="language-plaintext highlighter-rouge">.</code> (current folder).</p>
+
+<p><strong>Things To Note:</strong></p>
+<ul>
+  <li>Input edge collection file is checked for duplicate edges, which are discarded. Self-loops are also discarded.</li>
+  <li>The output file does not contain any vertex labels, only their index in the .nodes file.</li>
+  <li>Both <code class="language-plaintext highlighter-rouge">.graph</code> and <code class="language-plaintext highlighter-rouge">.nodes</code> files are stored without headers to be used for hitting-time calculations.</li>
+</ul>
+
+<h3 id="step-2-gethtmatrixinversion">Step-2: <code class="language-plaintext highlighter-rouge">getHTMatrixInversion</code></h3>
+<ul>
+  <li>Inverts matrix <code class="language-plaintext highlighter-rouge">A</code> of size <code class="language-plaintext highlighter-rouge">n x n</code> and stores the result in <code class="language-plaintext highlighter-rouge">B</code>. It is based on gaussian elimination (elementary row transformations).</li>
+  <li>Returns <code class="language-plaintext highlighter-rouge">1</code> if the matrix is singular and no inverse exists. Otherwise it returns <code class="language-plaintext highlighter-rouge">0</code>.</li>
+</ul>
+
+<p><strong>Usage:</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./getHTMatrixInversion <span class="nt">-i</span> <span class="o">[</span>input graph file] <span class="nt">-o</span> <span class="o">[</span>output hitting <span class="nb">times </span>matrix file] <span class="nt">-f</span> <span class="o">[</span>output folder]
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-i</code></td>
+      <td>input graph file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-o</code></td>
+      <td>output hitting times matrix file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-f</code></td>
+      <td>output folder (optional)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">- i</code> :    This file needs to be in same format as <code class="language-plaintext highlighter-rouge">.graph</code> output of <code class="language-plaintext highlighter-rouge">buildGraph</code> binary<br />
+<code class="language-plaintext highlighter-rouge">- o</code> :    Matrix-structured output file in which pair-wise hitting times are stored. The extension assigned is <code class="language-plaintext highlighter-rouge">.ht</code>. All rows and columns represent vertices of the graph. Vertex names are not included (no header row/column) as the nodes are represented in the same order as in the <code class="language-plaintext highlighter-rouge">.nodes</code> file.<br />
+<code class="language-plaintext highlighter-rouge">- f</code> :    Path to output folder the filename path is relative to. The default value is <code class="language-plaintext highlighter-rouge">.</code> (current folder).</p>
+
+<p><strong>Things To Note:</strong></p>
+<ul>
+  <li>The graph should be such that hitting times are calculable. If that is not the case, matrix inversion will fail due to singularity.</li>
+  <li>It is okay if the graph has multiple connected components.</li>
+</ul>
+
+<h3 id="step-3-hitndrive">Step-3: <code class="language-plaintext highlighter-rouge">hitndrive</code></h3>
+<p><strong>Usage:</strong></p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./hitndrive <span class="nt">-a</span> <span class="o">[</span>alterations file] <span class="nt">-o</span> <span class="o">[</span>outlier file] <span class="nt">-g</span> <span class="o">[</span>gene names file] <span class="nt">-i</span> <span class="o">[</span>influence matrix] <span class="nt">-f</span> <span class="o">[</span>output folder] <span class="nt">-n</span> <span class="o">[</span>output filename] <span class="nt">-l</span> <span class="o">[</span>alpha] <span class="nt">-b</span> <span class="o">[</span>beta] <span class="nt">-m</span> <span class="o">[</span>gamma]
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-a</code></td>
+      <td>alterations file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-o</code></td>
+      <td>outlier file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-g</code></td>
+      <td>gene names file</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-i</code></td>
+      <td>influence matrix</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-f</code></td>
+      <td>output folder (optional)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-n</code></td>
+      <td>output filename</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-l</code></td>
+      <td>alpha; (optional) default value is 1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-b</code></td>
+      <td>beta</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-m</code></td>
+      <td>gamma</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">- a</code> :    File containing list of sample IDs and name of the corresponding aberrant genes. Format is following:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	SampleID GeneName
+	ID_1 Gene_1
+	...
+	ID_i Gene_j
+	...
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">- o</code> :    File containing list of sample IDs and names of the corresponding expression-outlier gene. Weights to the corresponding outlier gene should be in the third column. Set weights to <code class="language-plaintext highlighter-rouge">1</code> to obtain unweighted version. Format is following:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	SampleID GeneName Weight
+	ID_1 Gene_1 Weight_1
+	...
+	ID_i Gene_j Weight_ij
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">- g</code> :    File containing names of genes in the influence matrix. It is output of <code class="language-plaintext highlighter-rouge">buildGraph</code> binary<br />
+<code class="language-plaintext highlighter-rouge">- i</code> :    Output of <code class="language-plaintext highlighter-rouge">getHTMatrixInversion</code> binary<br />
+<code class="language-plaintext highlighter-rouge">- f</code> :    Path to output folder the filename path is relative to. The default value is <code class="language-plaintext highlighter-rouge">.</code><br />
+<code class="language-plaintext highlighter-rouge">- n</code> :    Output filename for the <code class="language-plaintext highlighter-rouge">.lp</code> file. This file represents a CPLEX-format linear program whose solution gives influential driver genes given the input network, hitting-times, alteration and expression-outlier data.<br />
+<code class="language-plaintext highlighter-rouge">- l</code> :    Real number from interval <code class="language-plaintext highlighter-rouge">[0, 1]</code> representing fraction of expression-outliers to be covered in global. Tweak this number down if you are getting too many drivers and want to keep “problematic” expression-outliers aside.<br />
+<code class="language-plaintext highlighter-rouge">- b</code> :    Real number from interval <code class="language-plaintext highlighter-rouge">[0, 1]</code> representing fraction of top-weighted outliers to be covered per patient. This parameters ensures that the most important expression-outliers are explained by the chosen alteration events. Set to <code class="language-plaintext highlighter-rouge">0</code> if you wish all expression-outliers to be considered equally.<br />
+<code class="language-plaintext highlighter-rouge">- m</code> :    Real number from interval <code class="language-plaintext highlighter-rouge">[0, 1]</code> representing percentage of total incoming influence into an expression-outlier to be satisfied. This number is inversely proportional to the multi-hitting time distance from the selected set of drivers towards individual expression-outliers. Decrease this number to allow greater distances.</p>
+
+<p><strong>Things To Note:</strong></p>
+<ul>
+  <li>Alterations and expression-outliers files contain header rows, which are discarded during input. If your file does not contain a header, then first row of data will get ignored.</li>
+  <li>Running the program in unweighted mode and with <code class="language-plaintext highlighter-rouge">beta=0</code> (in case of uncertainty about importance of expression-outliers) will significantly increase the running time.</li>
+</ul>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

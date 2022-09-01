@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SiNVICT | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">SiNVICT</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/sinvict">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="sinvict">SiNVICT</h1>
+
+<p>SiNVICT is a tool for the detection of SNVs and indels from cfDNA/ctDNA samples obtained by ultra-deep sequencing.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>g++ version: 4.8.3</li>
+  <li>Boost version: 1_53</li>
+</ul>
+
+<hr />
+
+<h3 id="getting-sinvict">Getting SiNVICT</h3>
+
+<p>To install SiNVICT, first you should fetch it from our git repository, or download one of the corresponding compressed zip/tar.gz packages. After downloading, change the current directory to the source directory sinvict, and run make in the terminal. The sinvict binary will be created, which is ready to use.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/sinvict.git
+</code></pre></div></div>
+
+<p>To get all submodules included with SiNVICT as well, the following command can be used:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive https://github.com/sfu-compbio/sinvict.git
+</code></pre></div></div>
+<hr />
+
+<h3 id="preprocessing-data-for-sinvict">Preprocessing Data for SiNVICT</h3>
+
+<p>SiNVICT requires the readcount file (See <a href="https://github.com/genome/bam-readcount">here</a> for a detailed description of the format) to detect the SNVs/indels. However, based on the input file you have, you may follow the steps as described below to obtain the readcount file. SiNVICT is pre-packaged with the tools we have tested for different steps of obtaining the readcount file. You may opt to use any other software as you see fit.</p>
+
+<h4 id="obtaining-readcount-files-from-different--input-files">Obtaining Readcount Files from different  input files</h4>
+
+<ul>
+  <li>Input file: <strong>FASTQ</strong>
+    <ol>
+      <li>Trimming FASTQ files (optional, fastq-&gt;fastq).<br />
+ We recommend trimming your raw fastq file if it has not be qc’ed and contains barcordes and adapters.  Use one of the available FASTQ trimmers (such as <a href="http://hannonlab.cshl.edu/fastx_toolkit/">fastx_toolkit</a>) to remove any remaining adapters, barcodes, etc. Please refer to its <a href="http://hannonlab.cshl.edu/fastx_toolkit/commandline.html#fastx_trimmer_usage">manual</a> for details about running this tool.</li>
+      <li>Mapping (fastq -&gt; bam).<br />
+ Use one of the available short read mappers to map the reads (e.g. <a href="https://github.com/BilkentCompGen/mrfast">mrFAST</a>, <a href="https://github.com/lh3/bwa">bwa</a>). Please see their manuals for details.</li>
+    </ol>
+  </li>
+  <li>Input file: <strong>BAM</strong>
+    <ol>
+      <li>Recalibration and error correction (optional, bam -&gt; bam).<br />
+ We recommend using a recalibration and error correction tool on your BAM file if the initial alignments seem noisy. Use one of the available recalibration/error correction tools (such as <a href="https://github.com/mozack/abra">ABRA</a>) to improve noisy alignments. Please see their manuals for details.</li>
+      <li>Obtaining mapping statistics per location (bam -&gt; readcount).<br />
+ Use <a href="https://github.com/genome/bam-readcount">bam-readcount</a> to gather per location statistics from the alignment files. Please see its manuals for details.</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="running-sinvict">Running SiNVICT</h3>
+
+<p>The simplest way to run SiNVICT is to use the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./sinvict -t input-readcount-dir -o .
+</code></pre></div></div>
+
+<p>You may run SiNVICT with modified parameters. For example, to require the calls to have a minimum read depth of 70, you may use the following command.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./sinvict --minDepth 70 -t input-readcount-dir -o .
+</code></pre></div></div>
+
+<p>There are many options that can be added to the SiNVICT command line. Here are the explanation of these parameteres.</p>
+
+<ul>
+  <li>–error-rate:  Error Rate for the sequencing technology used (e.g. Illumina, Ion Torrent, …) (Default: 0.01)</li>
+  <li>–min-depth: Minimum required read depth for a call to be considered reliable. (Default: 100)</li>
+  <li>–left-strand-bias and –right-strand-bias: The strand bias values in the range [leftStrandBias, rightStrandBias] will be considered reliable. This [lsb, rsb] interval has to be between [0,1]. (Defaults: 0.3 and 0.7)</li>
+  <li>–read-end-fraction: Despite the trimming step, calls can be marked as low confidence according to the average position of the base on the reads that support a call. This value should be within range 0-1. (Default: 0.01)</li>
+  <li>–qscore-cutoff: The poisson model used by SiNVICT assigns a QScore to every call. Calls with a QScore below the user defined threshold will be considered low confidence. This value should be in range 0-99. (Default: 95)</li>
+  <li>–tumor-directory-path: The path to the directory where the readcount files are located.</li>
+  <li>–output-directory-path: The path to an empty directory where the output files will be generated.</li>
+</ul>
+
+<hr />
+
+<h2 id="output">Output</h2>
+
+<p>SiNVICT generates a number of output files that are ordered according to their level of confidence/filtering as named below (each filter eliminates some calls from the previous layer):</p>
+
+<ol>
+  <li>Poisson model: <strong>calls_level1.sinvict</strong></li>
+  <li>Minimum Read Depth filter: <strong>calls_level2.sinvict</strong></li>
+  <li>Strand-bias filter: <strong>calls_level3.sinvict</strong></li>
+  <li>Average position of called location among all reads supporting the call: <strong>calls_level4.sinvict</strong></li>
+  <li>Signal-to-Noise ratio filter: <strong>calls_level5.sinvict</strong></li>
+  <li>Homopolymer Regions filter: <strong>calls_level6.sinvict</strong></li>
+</ol>
+
+<p>Each tab delimited line in an output file corresponds to a call made by SiNVICT with the following fields:</p>
+
+<ol>
+  <li>Chromosome Name</li>
+  <li>Position</li>
+  <li>Sample Name (readcount file name)</li>
+  <li>Reference Base</li>
+  <li>Read Depth</li>
+  <li>Mutated Base(s)</li>
+  <li>Number of reads supporting the mutation</li>
+  <li>Variant Allele Percentage</li>
+  <li>Number of reads mapped to the + strand (in format “+:<code class="language-plaintext highlighter-rouge">value</code>”)</li>
+  <li>Number of reads mapped to the - strand (in format “-: <code class="language-plaintext highlighter-rouge">value</code>”)</li>
+  <li>Average position of the base on reads as a fraction (0.00 - 1.00)</li>
+  <li>“Somatic” or “Germline”, predicted based on variant allele frequency (do not take as the ground truth)</li>
+</ol>
+
+<p>The following is a sample output from SiNVICT:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chrX    66943552        22RV1_49C_10_to_1_10ng  A       3709    G       602     16.2308 +:430   -:172   0.53    Somatic
+chrX    66943552        22RV1_49C_10_to_1_1ng   A       1979    G       111     5.60889 +:75    -:36    0.54    Somatic
+chrX    66943552        22RV1_49C_10_to_1_2.5ng A       6221    G       803     12.9079 +:567   -:236   0.53    Somatic
+chrX    66943552        22RV1_49C_10_to_1_5ng   A       2508    G       265     10.5662 +:183   -:82    0.52    Somatic
+chrX    66943552        22RV1_49C_20_to_1_10ng  A       5247    G       304     5.79379 +:167   -:137   0.53    Somatic
+
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="sinvict-man-page">SiNVICT man page</h3>
+
+<p>To view the full list of SiNVICT options and their descriptions, please run the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./sinvict -h
+</code></pre></div></div>
+<hr />
+
+<h3 id="contact">Contact</h3>
+
+<p>For any additional questions/comments/suggestions, please send an email to the following address:</p>
+
+<p>ckockan@sfu.ca</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>SMac | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">SMac</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/ndokmai/sgx-genotype-imputation">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="smac-secure-genotype-imputation-in-intel-sgx">SMac: Secure Genotype Imputation in Intel SGX</h1>
+
+<h2 id="installation-requirements">Installation Requirements</h2>
+<ul>
+  <li>Ubuntu 16.04/18.04</li>
+  <li><a href="https://www.rust-lang.org/tools/install">Rust Nightly</a> (tested with version 1.51)
+    <ul>
+      <li>To install the nightly channel, run
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  rustup toolchain <span class="nb">install </span>nightly
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://edp.fortanix.com/docs/installation/guide/">Fortanix EDP</a> (for running in SGX mode)
+    <ul>
+      <li>For <strong>Install AESM service</strong>, we recommend installing the <strong>Ubuntu 16.04/18.04</strong> option. In addition, try installing
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>apt <span class="nb">install </span>libsgx-ae<span class="k">*</span>
+</code></pre></div>        </div>
+        <p>Make sure AESM service is up and running by</p>
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">sudo </span>service aesmd status
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://releases.llvm.org/download.html">Clang 3.8.0</a> (for remote attestation)
+    <ul>
+      <li>To automatically set up clang 3.8.0 locally, run <code class="language-plaintext highlighter-rouge">./setup_clang.sh</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="z-tests-for-timing-leakage">Z-tests for timing leakage</h2>
+<p>To test whether arithmetic primitives leak timing discrepancies, run from within <a href="smac/">smac/</a>,</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo +nightly run <span class="nt">--bin</span> timing_leak <span class="nt">--release</span>
+</code></pre></div></div>
+<p>SMac-lite relies on <code class="language-plaintext highlighter-rouge">nested-if-else</code>, <code class="language-plaintext highlighter-rouge">f32</code>, and <code class="language-plaintext highlighter-rouge">f64</code>, while SMac relies on <code class="language-plaintext highlighter-rouge">fixed-select</code> and <code class="language-plaintext highlighter-rouge">fixed-time-ln</code> for computation involving sensitive data. It is normal for <code class="language-plaintext highlighter-rouge">nested-if-else</code>, <code class="language-plaintext highlighter-rouge">f32</code>, and <code class="language-plaintext highlighter-rouge">f64</code> to exhibit some leakage, while <code class="language-plaintext highlighter-rouge">fixed-select</code> and <code class="language-plaintext highlighter-rouge">fixed-time-ln</code> should <strong>NOT</strong> leak.</p>
+
+<h2 id="configuration--build">Configuration &amp; Build</h2>
+<p>Edit the following parameters in <a href="config.sh">config.sh</a> to configure SMac:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">LITE</code>: SMac or SMac-lite
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">0</code>: SMac, with timing protection</li>
+      <li><code class="language-plaintext highlighter-rouge">1</code>: SMac-lite, without timing protection</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">SGX</code>: SGX or simulation mode
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">0</code>: simulation mode; no SGX hardware required</li>
+      <li><code class="language-plaintext highlighter-rouge">1</code>: SGX mode; Fortanix EDP must be installed and configured properly</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">RA</code>: remote attestation
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">0</code>: disable remote attestation</li>
+      <li><code class="language-plaintext highlighter-rouge">1</code>: enable remote attestation; this has not effect if <code class="language-plaintext highlighter-rouge">SGX=0</code>.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">N_THREADS</code>: Number of threads for batch processing; 1 thread per 1 input.</li>
+  <li><code class="language-plaintext highlighter-rouge">ENCLAVE_HEAP_SIZE</code>: enclave heap size; if the enclave fails while starting, try increasing this number.</li>
+</ul>
+
+<p>Rebuild for every change in configuration.</p>
+
+<p>Next, build by running</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./build.sh
+</code></pre></div></div>
+
+<h3 id="remote-attestation-configuration">Remote attestation configuration</h3>
+<p>If remote attestation is enabled, follow the steps below to ensure access to Intel Attestation Service.</p>
+<ol>
+  <li>Sign up for a Development Access account at https://api.portal.trustedservices.intel.com/EPID-attestation. Make sure that the Name Base Mode is Linkable Quote. Take note of “SPID”, “Primary key”, and “Secondary key”.</li>
+  <li>Modify the following fields in <a href="client/settings.json">client/settings.json</a> using the information from the previous step:
+    <ul>
+      <li>“spid”: “&lt;SPID&gt;”</li>
+      <li>“primary_subscription_key”: “&lt;Primary Key&gt;”</li>
+      <li>“secondary_subscription_key”: “&lt;Secondary key&gt;”</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="quick-test">Quick Test</h2>
+<p>To locally test whether the code can run successfully according to the configuration, run</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./test.sh
+</code></pre></div></div>
+<p>The script will test the code with all the sample data files located at <a href="smac/test_data/">smac/test_data/</a>. The outputs of SMac will be saved in <a href="results/">results/</a>.
+<!--- To test on chr20 chunk1, first follow the instruction on https://github.com/statgen/Minimac4
+to install minimac4. Replace the "minimac" executable in minimac/test_chr20_mmac.sh
+with the correct path. Then run the script (test_chr20_mmac.sh) which saves the output to
+out/mmac/. To test leak-resilient Rust implementation of minimac, run minimac/test_chr20_rust.sh
+which saves the output to out/rust/. ---></p>
+
+<h2 id="workflow">Workflow</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                                               +---------------------------------+
+     +-----------------------------+           |              +--------+         |
+     |                             |           |              |        |         |
+     |  Intel Attestation Service  |           |              |  Host  |         |
+     |                             |           |              |        |         |
+     +--------------^--------------+           |              +----|---+         |
+                    |                          |                   |             |
+                    |                          |   reference panel |             |
+ verify attestation |                          |                   |             |
+                    |              network     |   +---------------|---------+   |
+          +---------|--------+                 |   |               |         |   |
+          |         |        |                 |   |  +------------v------+  |   |
+          |   +-----v----+   |      input      |   |  |                   |  |   |
+          |   |          -----------------------------&gt;  Service Provider |  |   |
+          |   |  Client  |   |                 |   |  |                   |  |   |
+          |   |          &lt;-----------------------------   [running SMac]  |  |   |
+          |   +----------+   |      output     |   |  |                   |  |   |
+          |                  |                 |   |  +-------------------+  |   |
+          +--Client Machine--+                 |   |                         |   |
+                                               |   +-------SGX Enclave-------+   |
+                                               |                                 |
+                                               +-----------Host Machine----------+
+</code></pre></div></div>
+<h2 id="client">Client</h2>
+
+<h3 id="input-data-format">Input data format</h3>
+<p>SMac client takes two files as user input: bitmask file and symbol file. These two files together
+encode a haplotype sequence that the user wishes to impute. Bitmast file includes a binary
+vector (0 or 1 in each line) indicating whether the corresponding genetic variant in the
+reference panel (M3VCF file) is included in the user’s data. Note that the length of this
+vector should match the number of genetic variants in the reference panel. Symbol file includes
+a vector of -1 (missing), 0 (reference allele), or 1 (alternative allele), one for each line.
+These correspond to the user’s data values at the nonzero indices in the index file. 
+Example input files (<code class="language-plaintext highlighter-rouge">input_ind.txt</code> and <code class="language-plaintext highlighter-rouge">input_dat.txt</code>) as well as sample scripts for
+generating random input can be found in <a href="scripts/">scripts/</a>.</p>
+
+<h3 id="running-client">Running Client</h3>
+
+<p>To start Client on Client Machine, run</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_client.sh &lt;service provider ip addr&gt; &lt;bitmask file&gt; &lt;symbols batch <span class="nb">dir</span><span class="o">&gt;</span> &lt;results <span class="nb">dir</span><span class="o">&gt;</span>
+</code></pre></div></div>
+<p>where <code class="language-plaintext highlighter-rouge">&lt;bitmask file&gt;</code> are formatted according to <a href="#input-data-format">input data format</a>. <code class="language-plaintext highlighter-rouge">&lt;symbols batch dir&gt;</code> is a directory containing all symbol files for batch processing, and <code class="language-plaintext highlighter-rouge">&lt;results dir&gt;</code> is a directly to save results.  For example,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_client.sh 127.0.0.1 smac/test_data/large_input_bitmask.txt smac/test_data/batch results
+</code></pre></div></div>
+<h2 id="service-provider">Service Provider</h2>
+
+<p>SMac service provider takes the reference panel in the M3VCF format as input. To start Service Provider and Host on Host Machine,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_sp.sh &lt;reference panel m3vcf.gz&gt;
+</code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">&lt;reference panel m3vcf.gz&gt;</code> is a reference panel gzipped M3VCF file. For example,</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_sp.sh smac/test_data/largeref.m3vcf.gz
+</code></pre></div></div>
+<h2 id="output-format">Output format</h2>
+<p>The output of SMac is a text file including the imputed alternative allele dosages at every
+genetic position covered by the reference panel M3VCF file (one number per line).</p>
+
+<h2 id="contact-for-questions">Contact for questions</h2>
+<p>Ko Dokmai, ndokmai@iu.edu</p>
+
+<p>Hoon Cho, hhcho@broadinstitute.org</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Computational Biology (Current State and History) | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <div class="title media-heading">Computational Biology (Current State and History)</div>
+  
+</div>
+
+
+
+
+<div class="row post-full">
+  <div class="col-md-2">
+    <div class="bigspacer"></div>
+    <div class="glyphbox note"> <!-- DAD: what is this--> 
+        <div class="smallhead">
+          21 Apr 2016
+          
+          <div class="bigspacer"></div>
+          <a class="off" href="/team/farid-rashidi.html"></a>
+                     
+        </div>
+        <div class="bigspacer"></div>
+       <div class="smallhead">
+        Share
+      </div>
+        <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
+        <div class="post-sharing">
+         
+
+  
+  		<!-- Twitter -->
+<i class="fa fa-twitter fa-fw"></i>
+<a class="off" href="https://twitter.com/share?url=&text=" data-text="Computational Biology (Current State and History)" data-via="" data-related="" target="_blank">tweet</a>
+
+	
+
+
+        </div>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="bigspacer"></div>
+    <div class="glyphbox note">
+      <div class="content">
+        <p>This article was originaly appeared on <a href="https://simons.berkeley.edu/news/inside-algorithmic-challenges-genomics">simons institute website</a></p>
+
+<p>Since Descartes, and especially in the contributions of Kepler, Galileo and Newton, the main goal of the physical sciences has been to develop universal laws expressed as mathematical formulae, to which one can “input” measured conditions, i.e., known variables, to produce an “output,” representing certain aspects of the unknown. Biology as a scientific discipline did not initially follow this reductionist path until the revolutionary works of Darwin and Mendel, which demonstrated that biological systems shared common traits and patterns, expressed as “models”. By the early 20th century, mathematical methods, and statistical methods in particular, were already in use for the analysis of quantitative data in the biological sciences. The roots of computational biology, or bioinformatics, can be traced to that time, although, as in other sciences, biological data analyses were initially performed by humans. This changed after the advent of electronic computers, which were developed while pioneering physicists like Delbruck and Crick were establishing that hereditary information is carried by DNA, in long double-helical chains, encoding digital information – just like the tape in a Turing machine. Although the first computers, such as ENIAC, were initially employed in science for physical (thermonuclear) modeling by Von Neumann and others, it soon became natural for the likes of Gamow and Ulam to consider the use of ENIAC for biomolecular modeling and comparison. Simultaneously, Fisher started to use EDSAC in Britain to assess statistical significance, measured through the newly introduced notion of p-value. These happened while both Turing and Shannon, respective founders of theoretical computer science and information theory, were working on problems in biological computing.</p>
+
+<p>By the late 1950s, computers were already used in population studies, species classification, and taxonomy construction. However, all these applications used the computer as a fancy calculator. While the work of Wiener and others on cybernetics laid the foundations of systems biology, much of the groundwork in that direction was speculative and not very algorithmic. Arguably, computational biology only became a distinct discipline in the 1970s with the biomolecular sequence comparison algorithms of Needleman and Wunsch as well as Smith and Waterman, developed in response to growth in the field of molecular biology. The 1970s also witnessed the development of the first protein structure prediction algorithms to aid crystallography and molecular dynamics simulations.</p>
+
+<p>The first bioinformatics algorithms were developed simultaneously with the young field of theoretical computer science. After the introduction of Sanger sequencing, the first computational methods for genomic and proteomic sequence similarity search, as well as RNA secondary structure prediction, benefited from new algorithmic design and analysis ideas in dynamic programming (e.g. by Levenshtein for edit distance computation) and data structures for string matching (e.g. the suffix trees of Weiner and McCreight). With the kick-off of the Human Genome Project, the 1990s witnessed a significant increase in algorithmic activity for solving biomolecular problems. Novel methods for multiple sequence alignment, motif finding, haplotyping, phylogenetic tree construction, and protein structure analysis and prediction emerged at this time, all preparing the field for the eventual completion of the human genome sequence. The late 1990s were especially exciting, with both public and private efforts aiming to assemble the human genome from Sanger sequencing reads. Simultaneous development of microarray technologies resulted in numerous statistical and combinatorial techniques for clustering, classification and regression. Additional advances in co-expression analysis and protein interaction prediction through the yeast two hybrid system expanded systems biology into the realm of network science.</p>
+
+<p>The completion of the Human Genome Project and the emergence of next generation sequencing technologies moved bioinformatics into a new era of Big Data science. Read mapping and variant detection algorithms, gene annotation and functional element discovery methods, gene expression and alternative splicing analysis tools that use RNA-Seq data, became central to international scientific projects of unprecedented scale, such as the 1000 Genomes Project, ENCODE and modENCODE, The Cancer Genome Atlas, and the International Cancer Genome Consortium.</p>
+
+<p>As the size and variety of biomolecular data grow, interactions among molecular biology, theoretical computer science, statistics and statistical machine learning will need to deepen. Although algorithmic technology from the 80s and 90s, such as suffix arrays, locality sensitive hashing and color coding, as well as general techniques in linear and non-linear optimization and approximation algorithms for NP-hard problems, have already found profound applications in bioinformatics, newer techniques in streaming, sketching, metric embeddings, compressed data structures, differential privacy, homomorphic encryption and others are yet to attract significant interest from the computational biology community. Similarly, emerging problems in big data genomics, transcriptomics and proteomics have hardly attracted any attention in the theoretical computer science community. One of the objectives of our lab is to bring together the practices and expertise of the two communities, and develop algorithms and technologies to advance both research fields.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#blog-ref">
+    		blog <span>8</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    --> 
+  
+
+  
+    <hr>
+    
+
+</div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

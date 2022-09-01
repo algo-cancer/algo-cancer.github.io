@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CITUP | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">CITUP</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/citup">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<p>#CITUP</p>
+
+<p>– CITUP MANUAL –</p>
+
+<p>CITUP (Clonality Inference in Tumors Using Phylogeny) is a bioinformatics tool that can be used to infer tumor heterogeneity using multiple samples from a single patient. Given mutational frequencies for each sample, CITUP uses an optimization based algorithm to find the evolutionary tree best explaining the data.</p>
+
+<p>This manual contains all the necessary information to install and run CITUP. For questions and other inquiries please send an email to: smalikic@sfu.ca.</p>
+
+<p>– 1. SYSTEM REQUIREMENTS –</p>
+
+<p>CITUP is mainly tested on 64-bit UNIX-based environments. It requires the following libraries and tools:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make (version 3.81 or higher)
+g++ (GCC version 4.1.2 or higher)
+Boost library for C++ (version 1.53 or higher)
+Python (version 2.7)
+IBM ILOG CPLEX Optimization Studio
+</code></pre></div></div>
+
+<p>CITUP’s clustering module also requires several Python libraries such as NumPy and ScikitLearn. These libraries can be downloaded from http://continuum.io/downloads. For visualization of the trees, you will also need Perl and Graphviz (http://www.graphviz.org/) .</p>
+
+<p>– 2. INSTALLATION –</p>
+
+<p>To install CITUP, clone the repo, ensuring you use the <code class="language-plaintext highlighter-rouge">--recursive</code> option to pull in the submodules.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive git@github.com:sfu-compbio/citup.git
+</code></pre></div></div>
+
+<p>Change your directory to “./src” and modify the Boost and Cplex directories in “makefile” based on the absolute paths of these libraries in your system. Run make.</p>
+
+<p>If the installation is successful, the following files will be placed under “./bin”:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AnalyzeOutputs.exe	
+CitupIter.exe
+CplexApplication.exe
+generatingInput.exe
+</code></pre></div></div>
+
+<p>In addition to these binaries, there should also be scripts named “citup_iter.py”, “citup.py”, “clustering.py”, “pickBestTree.py” and “runCITUP.sh” in this directory.</p>
+
+<p>If you wish to run citup.py or citup_iter.py, you will need to install the lib/pypeliner submodule.  This can be done in two ways.</p>
+
+<p>Either add <code class="language-plaintext highlighter-rouge">lib/pypeliner</code> to your python path (assuming you are in the citup directory):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PYTHONPATH=`pwd`/lib/pypeliner
+</code></pre></div></div>
+
+<p>Or install pypeliner to your local site-packages:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd lib/pypeliner
+python setup.py install
+</code></pre></div></div>
+
+<p>– 3. INPUT PREPARATION –</p>
+
+<p>CITUP can be used with allelic frequencies of SNV and micro-indels calls as measured by deep sequencing.</p>
+
+<p>The input file should start with the following three lines:</p>
+
+<p>Num_mutations: &lt;integer greater than or equal to 1&gt;
+Num_samples: &lt;integer greater than or equal to 1&gt;
+Error_rate: &lt;real value between (0.0-1.0)&gt;</p>
+
+<p>Followed by a space delimited <Num_mutations> x <Num_samples> size table of mutational frequencies. As an example, suppose you have the following mutations and the number of reads matching the reference and variant allele are depicted as "Reference" and "Variant" respectively for samples #1 and #2:</Num_samples></Num_mutations></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Chr</td>
+      <td>Position</td>
+      <td>Mutation</td>
+      <td>Reference(#1)</td>
+      <td>Variant(#1)</td>
+      <td>Reference(#2)</td>
+      <td>Variant(#2)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10642787</td>
+      <td>C-&gt;T</td>
+      <td>436</td>
+      <td>351</td>
+      <td>721</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10696158</td>
+      <td>C-&gt;A</td>
+      <td>397</td>
+      <td>328</td>
+      <td>389</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10746481</td>
+      <td>A-&gt;G</td>
+      <td>250</td>
+      <td>199</td>
+      <td>1067</td>
+      <td>735</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>27997115</td>
+      <td>C-&gt;T</td>
+      <td>574</td>
+      <td>423</td>
+      <td>1975</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>28164689</td>
+      <td>G-&gt;A</td>
+      <td>780</td>
+      <td>150</td>
+      <td>643</td>
+      <td>104</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Then your input file should look like:</p>
+
+<p>Num_mutations: 5
+Num_samples: 2
+Error_rate: 0.03</p>
+
+<p>0.891995 0.831442
+0.904828 0.804916
+0.886414 0.81576
+0.848546 0.0522682
+0.322581 0.278447</p>
+
+<p>Here, the mutational frequencies are calculated as: (2 x Variant)/(Reference + Variant). For instance, the first mutational frequency for sample 1 is 0.891995=(2 x 351)/(436 + 351) and for sample 2 is 0.831442=(2 x 513)/(721 + 513). Note that when converting read counts to mutational frequencies, it is advised that you should discard any mutation that is suspected or known to be homozygous (e.g. mutational frequency significantly greater than 1.00) or is located on a region with copy number not equal to 2 in any sample. Similarly, mutations on X and Y chromosomes should either be discarded or their frequencies should be calculated with respect to the gender of the patient.</p>
+
+<p>Above, the error rate is used to determine how noisy the allelic frequencies are. For simulations, this is set to be the Gaussian noise that is used to generate the mutational frequencies from the given clonal frequencies. For real data, set this value low (0.03-0.05) for deep sequencing and higher (0.05-0.08) for lower coverage datasets.</p>
+
+<p>– 4. PRECOMPUTED TREES –</p>
+
+<p>In addition to the mutational frequencies, CITUP requires the set of all possible tree topologies up to a certain number of nodes. These topologies are precomputed and included with the CITUP package under the directory ./GammaAdjMatrices. The location of this directory must be given as an argument to some of the executables (see below).</p>
+
+<p>– 5. RUNNING CITUP EXECUTABLES –</p>
+
+<p>In this section we describe how to run the individual tools in the CITUP package and explain the most commonly used options. To get the full list of command line options for each *.exe file, run it with the argument “–help”.</p>
+
+<p>STEP1: Clustering</p>
+
+<p>For large datasets, the input frequencies have to be clustered prior to processing with CPLEX in order to speed up the computation. We have provided a script named “clustering.py” under “./bin” to perform this step:</p>
+
+<p>python ./clustering.py -i Frequencies.txt -o Clustered_mut.txt -c 5</p>
+
+<p>where “Frequencies.txt” is the name of the input file containing the mutational frequencies as explained above. “Clustered_mut.txt” is the name for the output file. 5 is the number of clusters.</p>
+
+<p>STEP2: CPLEX</p>
+
+<p>In this step, we invoke the CPLEX optimizer to find the optimal tree topologies and clonal frequencies:</p>
+
+<p>./CplexApplication.exe -n 4 -t 3 -i Clustered_mut.txt -o Results.txt -d 2 -r 20 -m 180 -p -q -g ../GammaAdjMatrices</p>
+
+<p>The command above means that we are running CplexApplication.exe on the tree with index 3 (-t 3) from 4 node trees (-n 4). Maximum duration is 2 hours (-d 2) with up to 20 threads (-r 20) and at most 180 Gb of memory is used (-m 180). The option “-g ../GammaAdjMatrices” specifies the location where the precomputed trees are stored. “-p” option tells the program to require every node to be assigned at least one new mutation. “-q” option enables quadratic error (otherwise a linear error model is used).</p>
+
+<p>– 6. RUNNING CITUP IN BATCH MODE –</p>
+
+<p>For your convenience, we have included a shell script named “runCITUP.sh” under “./bin” that can be used to run the programs described above on all trees up to a pre-determined number of nodes and report the best tree(s) given the input data. This is the preferred way to run CITUP. To run this script, first modify the parameters at the beginning of the script according to your system. Then run it as:</p>
+
+<p>./runCITUP.sh ../running_directory 15</p>
+
+<p>where “../running_directory” is a directory that contains a file named “Frequencies.txt” which is the file containing the mutational frequencies of the samples as described in the input preparation section. 15 is the number of clusters to be used in the clustering step. In the current distribution, maximum number of clusters allowed is 30. If this parameter is omitted or smaller than the maximum number of nodes allowed, then a separate clustering is performed for each tree size based on the number of nodes in the tree.</p>
+
+<p>An example simulation dataset is included with this package under “./test”. To demo CITUP, simply run:</p>
+
+<p>./runCITUP.sh ../test</p>
+
+<p>If this script runs ok, the best tree is reported to be “../test/Results_4_1.txt”. This file contains the clonal frequencies (each row represents one sample) referred to as “ALPHA_frequencies” and Q frequencies which are the cumulative allele frequencies. At the end of this file, all input mutations are listed together with the first clone they emerge (i.e. the first column of each row contains the clone number). See the next section on how to visualize this data.</p>
+
+<p>– 7. RUNNING CITUP_ITER IN BATCH MODE –</p>
+
+<p>Iterative citup can be run using the python script “citup_iter.py”.  The script requires installation of the pypeliner module, downloadable at “http://bitbucket.org/dranew/pypeliner”.</p>
+
+<p>The following command will run iterative citup on the example data in ../test</p>
+
+<p>python citup_iter.py –config citup_iter_config.ini ../test/Frequencies.txt BestTree.txt TreesTable.tsv</p>
+
+<p>The file BestTree.txt will contain the optimal tree in the same format as for CITUP, and TreesTable.tsv will contain a table of objective values and BICs for all trees.  The configuration file citup_iter_config.ini contains the following configuration options:</p>
+
+<p>min_nodes : minimum number of nodes for trees explored
+max_nodes : maximum number of nodes for trees explored
+max_children_per_node : maximum number of children per node for trees explored</p>
+
+<p>– 8. VISUALIZING THE RESULTS –</p>
+
+<p>If you have Perl and Graphviz (http://www.graphviz.org/) installed, you can visualize the trees reported by CITUP using the script “visualizeResults.pl” located under “./bin”. The following is an example usage:</p>
+
+<p>perl ./visualizeResults.pl -r ../running_directory -g ../GammaAdjMatrices -o ../results_summary -n 4</p>
+
+<p>where “../running_directory” is the path of the directory where the results are stored after running “runCitup.sh” and “../GammaAdjMatrices” is where the gamma and adjacency matrices are stored. The main output of this script will be a file called “index.html” under “../results_summary”. The option “-n 4” tells the script to only visualize the best scoring trees that contain 4 nodes. If this option is omitted, all best scoring trees (from each tree size) will be visualized.</p>
+
+<p>– 9. EVALUATING CITUP –</p>
+
+<p>SIMULATING INPUT:</p>
+
+<p>We also provide a tool to simulate a dataset in order to evaluate CITUP:</p>
+
+<p>./generatingInput.exe -m 500 -s 5 -n 4 -e 0.05 -z 54783 -d 5.0 -i Input.txt -f Frequencies.txt -g ../GammaAdjMatrices/</p>
+
+<p>This command will generate an input dataset with 500 mutations (-m 500) on 5 samples (-s 5) with allele frequency noise rate 0.05 (-e 0.05). The option “-n 4” determines the number of nodes in the tree (also the number of clones). The option “-d” can be used to set the Dirichlet parameter, which is the distribution used to produce the clonal frequencies. The option “-z” can be used to set the random number generator seed.</p>
+
+<p>The file “Frequencies.txt” is to be used in the clustering step (see above). File “Input.txt” contains information about the true tree topology and clonal frequencies. This file is later used for evaluation (see below).</p>
+
+<p>ANALYZING THE RESULTS:</p>
+
+<p>If the input is simulated as above, the output can be evaluated with the program AnalyzeOutputs.exe. The following command takes as input the file generated by generatingInput.exe (-i Input.txt) and also the output of CplexApplication.exe on the same dataset (-o Results.txt):</p>
+
+<p>./AnalyzeOutputs.exe -i Input.txt -o Results.txt -g ../GammaAdjMatrices/</p>
+
+<p>The output of this program is written on the standard output.</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

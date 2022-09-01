@@ -1,0 +1,978 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Software | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="https://algo-cancer.github.io/projects/" class="active">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+
+<div class="bigspacer"></div>
+
+
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/immunotypersr.html" class="off">ImmunoTyper-SR</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Genotyping Immunoglobulin Heavy Chain Variable Genes using Short Read Data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/trisicell.html" class="off">Trisicell</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Scalable tumor phylogeny reconstruction and validation from single-cell data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/huntress.html" class="off">HUNTRESS</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A fast heuristic tool for reconstructing phylogenetic trees of tumor evolution</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/smac.html" class="off">SMac</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Genotype Imputation in Intel SGX</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/cammiq.html" class="off">CAMMiQ</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Microbial identification and quantification</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/immunotyper.html" class="off">ImmunoTyper</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A Immunoglobulin Heavy Chain Variable Gene genotyping and CNV analysis tool for WGS PacBio Long Reads using ILP Optimization</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/conett.html" class="off">CONETT</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Combinatorial optimization method for identification of conserved evolutionary trajectories in tumors</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/skses.html" class="off">SkSES</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Sketching algorithms for genomic data analysis and querying in a secure enclave</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/phiscs-bnb.html" class="off">PhISCS-BnB</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A Fast Branch and Bound Algorithm for the Perfect Tumor Phylogeny Reconstruction Problem</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/phylom.html" class="off">PhyloM</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Tumor Phylogeny Topology Inference via Deep Learning</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/phiscs.html" class="off">PhISCS</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Tumor Phylogeny Reconstruction via Integrative use of Single Cell and Bulk Sequencing Data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/colormap.html" class="off">CoLoRMap</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Correcting Long noisy Reads by Mapping short reads</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/destruct.html" class="off">DeStruct</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Accurate Rearrangement Detection using Breakpoint Specific Realignment</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/loardfast.html" class="off">lordFAST</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Sensitive and Fast Alignment Search Tool for Long Read sequencing Data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/svict.html" class="off">SViCT</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Structural Variation and fusion detection using targeted sequencing data from circulating cell free DNA</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/bsite.html" class="off">B-SCITE</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A software package to compute trees of tumor evolution by integrative use of single-cell and bulk sequencing data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/aldy.html" class="off">Aldy</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Aldy is a tool for allelic decomposition and exact genotyping of highly polymorphic and structurally variant genes</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/cdcap.html" class="off">cd-CAP</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">a combinatorial algorithm to identify subnetworks with conserved molecular alteration pattern across a large subset of a tumor sample cohort</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mistrvar.html" class="off">MiStrVar</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Micro Structural Variant Caller</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/assembltrie.html" class="off">Assembltrie</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A software tool for compressing collections of (fixed length) Illumina reads</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mechrna.html" class="off">MechRNA</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A computational tool for integration RNA-RNA interactions, RNA-Protein interactions and correlation data in order to infer potential mechanisms for a lncRNA of interest</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/leafdelted.html" class="off">MLTED</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A new edit distance measure between a pair of clonal trees</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/remixt.html" class="off">ReMixT</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A tool for joint inference of clone specific segment and breakpoint copy number in whole genome sequencing data</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/ctpsingle.html" class="off">CTPsingle</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A tool for Intra-tumor heterogeneity inference from single-sample tumors</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/cypiripi.html" class="off">Cypiripi</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">A tool for finding out the CYP2D6/CYP2D7 genotypes in the HTS reads</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/compas.html" class="off">COMPAS</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Comparative alternative splicing detection</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/sinvict.html" class="off">SiNVICT</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Ultra-Sensitive Detection of Single Nucleotide Variants and Indels in Circulating Tumour DNA</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/orman.html" class="off">Orman</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Optimal Resolution of Ambiguous RNA-Seq Multi-mappings in the Presence of Novel Isoforms</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/deez.html" class="off">DeeZ</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">DeeNA Zip (SAM/BAM compression tool)</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/motifcounting.html" class="off">MotifCounting</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Network Motif Counting</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/optdis.html" class="off">OptDis</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Optimally Discriminative Subnetwork Biomarkers</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/drive.html" class="off">Hit'nDRIVE</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Combinatorial algorithm to prioritize cancer driver genes</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/citup.html" class="off">CITUP</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Clonality Inference in Multiple Tumor Samples using Phylogeny</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/variationhunter.html" class="off">VariationHunter</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Discovery of Structural Variation</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/scalce.html" class="off">SCALCE</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">FASTQ compression via boosting Sequence Compression Algorithms using Locally Consistent Encoding</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/nfuse.html" class="off">nFuse</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Discovery of Complex Genomic Rearrangements in Cancer</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/novelseq.html" class="off">NovelSeq</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Novel Sequence Insertion Detection</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mrsfast.html" class="off">mrsFAST</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">micro-read substitution-only Fast Alignment Search Tool</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mrfast.html" class="off">mrFAST</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Micro Read Fast Alignment Search Tool</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mirrort.html" class="off">MirrorT</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Mirroring co-evolving trees in the light of their topologies</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/mam.html" class="off">MaM</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Multiple Alignment Manipulator</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/drfast.html" class="off">drFAST</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">di-base read Fast Alignment Search Tool</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/dissect.html" class="off">Dissect</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">DIScovery of Structural Events Containing Transcripts</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/cliiq.html" class="off">CLIIQ</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Accurate Comparative Detection and Quantification of Expressed Isoforms in a Population</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+  
+  
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/defuse.html" class="off">deFuse</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">deFuse is a software package for gene fusion discovery using RNA-Seq data.</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+   <!-- closing a row -->
+  </div><div class="bigspacer"></div>
+  
+
+  
+  
+   <!-- opening of a new row -->
+  <div class="row">
+  
+  <div class="col-md-4 paperbox">
+        <div class="head">
+                <a href="https://algo-cancer.github.io/projects/comrad.html" class="off">Comrad</a>
+            </div>    
+            <div class="smallspacer"></div>
+            <p class="note">Discovery of gene fusions using paired end RNA-Seq and WGSS</p>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+  
+
+
+ <!-- close last open row -->
+</div><div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+

@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>PhISCS | Algorithms for Cancer</title>
+    <meta name="description" content="Cenk Sahinalp Lab">
+    <meta name="author" content="Cenk Sahinalp">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="https://algo-cancer.github.io/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="https://algo-cancer.github.io/assets/themes/lab/images/logo/favicon.png"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="https://algo-cancer.github.io/images/logo.png">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="https://algo-cancer.github.io/">Algorithms for Cancer</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/papers/">Publications</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="https://algo-cancer.github.io/projects/">Software</a></li>
+      	
+      
+    
+  
+
+
+
+          <!--<li class="dropdown nav navbar-nav">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">-->
+              <!--More <span class="caret"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="dropdown-menu nav navbar-nav" role="menu">-->
+              <!---->
+              <!---->
+              <!--
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+-->
+            <!--</ul>-->
+          <!--</li>-->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="page-header">
+  			<div class="title media-heading">PhISCS</div>
+  			
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-github-alt fa-fw"></i>
+				<a class="off" href="https://github.com/sfu-compbio/PhISCS">Source Code</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	<div class="col-md-8">
+    	<div class="content">
+      	<h1 id="phiscs"><strong>PhISCS</strong></h1>
+<p>PhISCS is a tool for sub-perfect tumor phylogeny reconstruction via integrative use of single cell and bulk sequencing data. If bulk sequencing data is used, we expect that mutations originate from diploid regions of the genome. Due to variance in VAF values, we recommend the use of bulk data in cases when sequencing depth is at least 1000x (haploid coverage). As output, PhISCS reports tree of tumor evolution together with a set of eliminated mutations, where eliminated mutations represent mutations violating Infinite Sites Assumption (due to deletion of variant allele or due to recurrent mutation) or mutations affected by copy number aberrations that were missed during the tumor copy number profiling (e.g. gain of non-variant allele). More details about the method can be found in the preprint available <a href="https://www.biorxiv.org/content/biorxiv/early/2018/07/25/376996.full.pdf">here</a>.</p>
+
+<h2 id="contents">Contents</h2>
+<ol>
+  <li><a href="#installation">Installation</a>
+    <ul>
+      <li><a href="#installationilp">PhISCS-I</a>
+        <ul>
+          <li><a href="#prerequisiteilp">Prerequisite: ILP solver</a></li>
+        </ul>
+      </li>
+      <li><a href="#installationcsp">PhISCS-B</a>
+        <ul>
+          <li><a href="#prerequisitecsp">Prerequisite: CSP solver</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#running">Running</a>
+    <ul>
+      <li><a href="#input">Input</a>
+        <ul>
+          <li><a href="#singlecellmatrix">Single Cell Matrix</a></li>
+          <li><a href="#bulkdata">Bulk Data</a></li>
+        </ul>
+      </li>
+      <li><a href="#output">Output</a>
+        <ul>
+          <li><a href="#logfile">Log File</a></li>
+          <li><a href="#outputmatrixfile">Output Matrix File</a></li>
+        </ul>
+      </li>
+      <li><a href="#parameters">Parameters</a></li>
+    </ul>
+  </li>
+  <li><a href="#example">Example</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
+
+<p><a name="installation"></a></p>
+<h2 id="installation">Installation</h2>
+<p>PhISCS is written in Python and C. It supports both Python 2.7 and 3. Currently it is intended to be run on POSIX-based systems (only Linux and macOS have been tested).</p>
+
+<blockquote>
+  <p><strong>RECOMENDATION</strong>:  At the moment, in cases when both, single cell and bulk data are used as input, we recommend the use of PhISCS-I over PhISCS-B (due to more thorough tests and software validation that we have performed for PhISCS-I). However, when single cell data is the only input, we have extensively tested both implementations and, since PhISCS-B can have potential running time advantage in this case, we recommend its use over PhISCS-I.</p>
+</blockquote>
+
+<p><a name="installationilp"></a></p>
+<h3 id="phiscs-i">PhISCS-I</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/PhISCS.git
+cd PhISCS
+python PhISCS-I --help
+</code></pre></div></div>
+
+<p><a name="prerequisiteilp"></a></p>
+<h4 id="prerequisite-ilp-solver">Prerequisite: ILP solver</h4>
+
+<p>In order to run PhISCS-I, the main requirement is the installation of Gurobi solver. <a href="http://www.gurobi.com">Gurobi</a> a commercial solver which is free for academic purposes. After installing it, installation of <code class="language-plaintext highlighter-rouge">gurobipy</code> package is necessary prior to being able to successfully run PhISCS-I (below we provide some examples of the input and commands used to run the tool).</p>
+
+<p><a name="installationcsp"></a></p>
+<h3 id="phiscs-b">PhISCS-B</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/sfu-compbio/PhISCS.git
+cd PhISCS
+./PhISCS-B-configure
+python PhISCS-B --help
+</code></pre></div></div>
+
+<p><a name="prerequisitecsp"></a></p>
+<h4 id="prerequisite-csp-solver">Prerequisite: CSP solver</h4>
+
+<p>Some of CSP solver have been already included in the PhISCS package. There is an option to add a new CSP solver to PhISCS-B by provinding a path to the exe file of the desired CSP solver.</p>
+
+<p><a name="running"></a></p>
+<h2 id="running">Running</h2>
+
+<p><a name="input"></a></p>
+<h3 id="input">Input</h3>
+
+<p><a name="singlecellmatrix"></a></p>
+<h4 id="1-single-cell-matrix">1. Single Cell Matrix</h4>
+<p>Single cell input is assumed to be represented in the form of ternary, <strong>tab-delimited</strong>, matrix with rows corresponding to single cells and columns corresponding to mutations. We assume that this file contains headers and that matrix is ternary matrix with 0 denoting the absence and 1 denoting the presence of mutation in a given cell, whereas ? represents the lack of information about presence/absence of mutation in a given cell (i.e. missing entry). In order to simplify parsing of the matrix, we also assume that upper left corner equals to string “cellID/mutID”.</p>
+
+<p>Below is an example of single-cell data matrix. Note that mutation and cell names are arbitrary strings not containing tabs or spaces, however they must be unique.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cellID/mutID  mut0  mut1  mut2  mut3  mut4  mut5  mut6  mut7
+cell0         0     0     ?     0     0     0     0     0
+cell1         0     ?     1     0     0     0     1     1
+cell2         0     0     1     0     0     0     1     1
+cell3         1     1     0     0     0     0     0     0
+cell4         0     0     1     0     0     0     0     0
+cell5         1     0     0     0     0     0     0     0
+cell6         0     0     1     0     0     0     1     1
+cell7         0     0     1     0     0     0     0     0
+cell8         ?     0     0     0     ?     0     ?     1
+cell9         0     1     0     0     0     0     0     0
+</code></pre></div></div>
+
+<p><a name="bulkdata"></a></p>
+<h4 id="2-bulk-data">2. Bulk Data</h4>
+<p>As bulk data input, we also expect <strong>tab-delimited</strong> file with the following columns:</p>
+
+<p><strong>ID</strong> which represents mutational ID (used in single-cell data matrix for the same mutation)<br />
+<strong>Chromosome</strong> which represents chromosome of the mutation (any string not containing tabs or empty spaces)<br />
+<strong>Position</strong> which represents position (on chromosome) of the mutation (any string/number not containing tabs or empty spaces)<br />
+<strong>MutantCount</strong> is the number of mutant reads in the bulk data. If multiple bulk samples are used, values are semicolon-delimited and provided in the sorted order of samples (this order is expected to be same for all mutations, e.g. first number always representing read count in sample 1, second number in sample 2 etc.)<br />
+<strong>ReferenceCount</strong> is the number of reference reads in the bulk data. If multiple bulk samples are used, values are semicolon-delimited and provided in the sorted order of samples (this order is expected to be same for all mutations, e.g. first number always representing read count in sample 1, second number in sample 2 etc.)<br />
+<strong>INFO</strong> which contains additional information about the mutation and is semicolon-delimited. Entries in this column are of the form: entryID=values, where values are delimited by commas. An example of INFO column is:
+“sampleIDs=S0,S1;synonymous=false;exonic=true”. The only obligatory information required now is information about sample origins (in cases of absence of them, arbitrary distinct strings can be used, e.g. sampleIDs=S0,S1,S2;)</p>
+
+<p>As an example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ID    Chromosome  Position  MutantCount     ReferenceCount    INFO
+mut0  1           0         766;511;688     4234;4489;4312    sampleIDs=primary,metastasis1,metastasis2
+mut1  1           1         719;479;719     4281;4521;4281    sampleIDs=primary,metastasis1,metastasis2
+mut2  1           2         1246;1094;859   3754;3906;4141    sampleIDs=primary,metastasis1,metastasis2
+mut3  1           3         298;226;272     4702;4774;4728    sampleIDs=primary,metastasis1,metastasis2
+mut4  1           4         353;227;255     4647;4773;4745    sampleIDs=primary,metastasis1,metastasis2
+mut5  1           5         306;232;279     4694;4768;4721    sampleIDs=primary,metastasis1,metastasis2
+mut6  1           6         725;449;492     4275;4551;4508    sampleIDs=primary,metastasis1,metastasis2
+mut7  1           7         703;417;507     4297;4583;4493    sampleIDs=primary,metastasis1,metastasis2
+
+</code></pre></div></div>
+
+<p>(in the example of bulk file shown above, we have that for mut0 number of mutant and reference reads in the first sample are respectively 766 and 4234, in the second sample 511 and 4489 and in the third sample 688 and 4312).</p>
+
+<p><a name="output"></a></p>
+<h3 id="output">Output</h3>
+<p>The program will generate two files in <strong>OUT_DIR</strong> folder (which is set by argument -o or –outDir). This folder will be created automatically if it does not exist.</p>
+
+<p><a name="outputmatrixfile"></a></p>
+<h4 id="1-output-matrix-file">1. Output Matrix File</h4>
+<p>The output matrix is also a tab-delimited file having the same format as the input matrix, except that eliminated mutations (columns) are excluded (so, in case when mutation elimination is allowed, this matrix typically contains less columns than the input matrix). Output matrix represents genotypes-corrected matrix (where false positives and false negatives from the input are corrected and each of the missing entries set to 0 or 1). Suppose the input file is <strong>INPUT_MATRIX.ext</strong>, the output matrix will be stored in file <strong>OUT_DIR/INPUT_MATRIX.CFMatrix</strong>. For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> input file: data/ALL2.SC
+output file: OUT_DIR/ALL2.CFMatrix
+</code></pre></div></div>
+
+<p><a name="logfile"></a></p>
+<h4 id="2-log-file">2. Log File</h4>
+<p>Log file contains various information about the particular run of PhISCS (e.g. eliminated mutations or likelihood value). The interpretation of the relevant reported entries in this file is self-evident. Suppose the input file is <strong>INPUT_MATRIX.ext</strong>, the log will be stored in file <strong>OUT_DIR/INPUT_MATRIX.log</strong>. For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input file: data/ALL2.SC
+  log file: OUT_DIR/ALL2.log
+</code></pre></div></div>
+
+<p><a name="parameters"></a></p>
+<h3 id="parameters">Parameters</h3>
+<p>| Parameter  | Description                                                                                | Default  | Mandatory      |
+|————|——————————————————————————————–|———-|—————-|
+| -SCFile    | Path to single cell data matrix file                                                       | -        | :radio_button: |
+| -fn        | Probablity of false negative                                                               | -        | :radio_button: |
+| -fp        | Probablity of false positive                                                               | -        | :radio_button: |
+| -o         | Output directory                                                                           | current  | :white_circle: |
+| -kmax      | Max number of mutations to be eliminated                                                   | 0        | :white_circle: |
+| -threads   | Number of threads (supported by PhISCS-I)                                                  | 1        | :white_circle: |
+| -bulkFile  | Path to bulk data file                                                                     | -        | :white_circle: |
+| -delta     | Delta parameter accounting for VAF variance                                                | 0.20     | :white_circle: |
+| -time      | Max time (in seconds) allowed for the computation                                          | 24 hours | :white_circle: |
+| –drawTree | Draw output tree with Graphviz                                                             | -        | :white_circle: |</p>
+
+<p><a name="example"></a></p>
+<h2 id="example">Example</h2>
+
+<p>For running PhISCS without VAFs information and without ISA violations:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python PhISCS-I -SCFile example/input.SC -fn 0.2 -fp 0.0001 -o result/
+</code></pre></div></div>
+
+<p>For running PhISCS without VAFs information but with ISA violations:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python PhISCS-I -SCFile example/input.SC -fn 0.2 -fp 0.0001 -o result/ -kmax 1
+</code></pre></div></div>
+
+<p>For running PhISCS with both VAFs information and ISA violations (with time limit of 24 hours):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python PhISCS-I -SCFile example/input.SC -fn 0.2 -fp 0.0001 -o result/ -kmax 1 -bulkFile example/input.bulk -time 86400
+</code></pre></div></div>
+
+<p>For running PhISCS with VAFs information but no ISA violations (with drawing the output tree):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python PhISCS-I -SCFile example/input.SC -fn 0.2 -fp 0.0001 -o result/ -bulkFile example/input.bulk --drawTree
+</code></pre></div></div>
+
+<p><a name="contact"></a></p>
+<h2 id="contact">Contact</h2>
+<p>If you have any questions please e-mail us at smalikic@sfu.ca or frashidi@iu.edu.</p>
+
+    	</div> 
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+
+
+   </div>
+
+
+    
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://algo-cancer.github.io/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  </body>
+</html>
+
